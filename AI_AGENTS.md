@@ -6,52 +6,82 @@
 
 ## Stack
 
-Vite (per the central multi-stack builder at `~/work/projects/builder/`).
+Vite project under the sites/* workspace. Build path goes
+through the parent `sites/Makefile` (Docker-orchestrated) which delegates
+per-stack work to the central builder at `~/work/projects/builder/`.
 
 ## Project structure
 
 - `src/` — application source
+- `public/` — static assets copied to `dist/` at build (favicons, OG images, `_headers`)
 - `docs/` — PRD, Prompts log
-- `Makefile` — includes the central builder; auto-detects stack
+- `Makefile` — thin forwarder to `../Makefile`
+- `wrangler.jsonc` — Cloudflare deploy config
 - `scripts/` *(if present)* — ingester or build-time helpers
 
-## Building info
+## Build tooling — Makefile + Docker
 
-Stack auto-detected by the central builder at `~/work/projects/builder/`,
-which provides per-stack Makefiles (`Makefile.react`, `Makefile.python`, etc.).
+All dev work runs inside the parent `sites1` docker container. The host doesn't
+need Node/pnpm installed; the container does. The parent `Makefile`
+(`../Makefile` from this dir) is the canonical entry point.
 
-Two ways to build:
+### Why docker
 
-1. **Via sites/Makefile** (Docker-orchestrated, common): from `sites/`:
-   - `make buildsh` — enter the dev container
-   - `make build proj=kwizicle.com` / `make run proj=kwizicle.com` / `make test proj=kwizicle.com`
+- Pinned Node + pnpm versions match Cloudflare's build env.
+- Avoids polluting the host with per-project node_modules.
+- Same image serves every sibling project under sites/.
 
-2. **From this project dir** (own Makefile + builder include):
-   - `make deps` — install dependencies
-   - `make build` / `make run` / `make test`
+### Common Makefile targets
 
-See `~/work/projects/builder/README.md` for the central builder docs.
+This project's local `Makefile` forwards every target to `../Makefile` with
+`proj=kwizicle.com`, so these all work either from this dir or from `sites/`:
 
-## Deployment info
+| Command | What it does |
+|---|---|
+| `make buildsh` *(from `sites/`)* | Drop into a bash shell inside the docker container at `/usr/src/app` (= `sites/` mounted in). |
+| `make run` *(from here)* / `make run proj=kwizicle.com` *(from `sites/`)* | `pnpm install` then start dev server (auto-detected). |
+| `make check-vite proj=kwizicle.com` | Start the dev server, skipping install. |
+| `make test proj=kwizicle.com` | `pnpm install` + `pnpm build` + `pnpm test`. **Hard-fails outside docker** — `make buildsh` first, or `docker exec`. |
+| `make deps` | Install pnpm globally (image bootstrap). |
+| `make clean` *(from `sites/`)* | Remove root `package.json`, lockfile, node_modules. Don't run inside a project dir. |
 
-- **Platform**: cloudflare-pages
-- **Live URL**: https://kwizicle.com/  *(update once deployed)*
-- **Last deployed commit**: <fill once shipped>
-- **Deploy trigger**: push to main → CF Pages build hook
-- **Notes**: `wrangler.toml` declares the Pages project; deploy plumbing lands in v3.C
+### Running Make targets from a Claude Code session
+
+The Bash tool runs on the host as `vijo`, not inside docker. To execute a
+target inside the container, find the running container and `docker exec` in:
+
+```bash
+docker ps                                               # find the sites1 container name
+docker exec -w /usr/src/app <name> make test proj=kwizicle.com
+```
+
+## Deployment
+
+- **Platform:** Cloudflare Workers (Static Assets) — *not* Vercel.
+- **Config:** `wrangler.jsonc` at the repo root — points `assets.directory` at `./dist` and uses `not_found_handling: "single-page-application"` for SPA client-side routing.
+- **Headers:** `public/_headers` — cache (`/assets/*` immutable, HTML no-cache) + security headers (`X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`). Vite copies `public/` into `dist/` at build, so the file ships with the assets.
+- **Build:** `pnpm build` → `dist/`. Wrangler picks up `dist/` via `wrangler.jsonc`.
+- **Deploy:** `wrangler deploy` (locally) or via Cloudflare's Git integration on push.
+- **Vite version:** must be ≥ 6.0.0 — Wrangler's Vite integration rejects Vite 5.
+- **Env vars:** set `VITE_*` vars (e.g. `VITE_GA_ID`) in the Cloudflare Workers project's environment-variable settings — they're inlined at build time.
+- **Live URL:** https://kwizicle.com/  *(update once first deploy succeeds)*
+- **Legacy:** if a `vercel.json` or `.vercelignore` is present from a Lovable export, it's inert on Cloudflare and safe to delete.
 
 ## How to run
 
 ```bash
-make deps
-make run
+# from this dir, after `make buildsh` from sites/:
+make deps      # → pnpm install via the central builder
+make run       # → dev server
+make build     # → dist/
+make test      # → pnpm install + build + test (must be inside container)
 ```
 
 ## Key conventions
 
 - Stack: vite
-- Build via the central builder
-- Cloudflare Pages constraints respected: Vite ≥6, frozen-lockfile install, no `_redirects` SPA fallback
+- Build path: this project's `Makefile` → `../Makefile` → `~/work/projects/builder/`
+- Cloudflare deploy constraints: Vite ≥ 6, frozen-lockfile install, no `_redirects` SPA fallback (handled by `wrangler.jsonc`'s `not_found_handling` instead).
 
 ## Out of scope / don't touch
 

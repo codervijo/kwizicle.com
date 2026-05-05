@@ -1,7 +1,0 @@
-name = "kwizicle-com"
-compatibility_date = "2026-05-01"
-
-[site]
-bucket = "./dist"
-
-# Cloudflare Pages config — adjust if your build output dir is not ./dist
