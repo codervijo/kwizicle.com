@@ -1,9 +1,14 @@
-# Per-project Makefile — delegates to the central multi-stack builder.
-# See ~/work/projects/builder/README.md for target list.
+PROJ := kwizicle.com
 
-BUILDER_PATH ?= ../../builder
+.DEFAULT_GOAL := help
 
-# Auto-detect stack; override with STACK=astro / STACK=react / STACK=vite etc.
-# STACK ?= astro
+# Verify parent Makefile exists — this project is part of the sites/ workspace.
+ifeq ($(wildcard ../Makefile),)
+$(error This Makefile is meant to be run inside the sites/ workspace. Parent Makefile not found.)
+endif
 
-include $(BUILDER_PATH)/Makefile
+# Forward every target to the parent Makefile with proj set to this project.
+# `make buildsh` (parent) drops you into the dev container; `make run` etc.
+# delegate to the central builder repo (~/work/projects/builder/) under the hood.
+%:
+	$(MAKE) -C .. $@ proj=$(PROJ)

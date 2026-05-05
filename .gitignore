@@ -1,26 +1,44 @@
 # Node
 node_modules/
+.pnpm/
 .pnpm-store/
+.pnp.*
+
+# Build output
 dist/
 build/
 .next/
+.vite/
 .cache/
+
+# Bun (we use pnpm)
+bun.lockb
+
+# npm (we use pnpm)
+package-lock.json
 
 # Env / secrets
 .env
+.env.local
 .env.*
-*.env
-*.env.*
+!.env.example
 
 # Editor / OS
 .DS_Store
-*.swp
+Thumbs.db
+*.sw?
 *~
 .vscode/
 .idea/
 
 # Cloudflare
 .wrangler/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # Caches
 .eslintcache
