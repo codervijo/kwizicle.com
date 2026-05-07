@@ -8,6 +8,7 @@ import { loadStats } from "@/lib/puzzle";
 import TodayPage from "@/pages/TodayPage";
 import StatsPage from "@/pages/StatsPage";
 import HowToPlayPage from "@/pages/HowToPlayPage";
+import ExtrasPage from "@/pages/ExtrasPage";
 import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +41,7 @@ function AppLayout() {
         <Routes>
           <Route path="/" element={<Navigate to="/today" replace />} />
           <Route path="/today" element={<TodayPage />} />
+          <Route path="/extras" element={<ExtrasPage />} />
           <Route path="/stats" element={<StatsPage />} />
           <Route path="/how-to-play" element={<HowToPlayPage />} />
           <Route path="*" element={<NotFound />} />

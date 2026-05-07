@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-04",
+  "equations": [
+    { "left": "kiwi",   "operator": "+", "right": "carrot", "result": 7 },
+    { "left": "carrot", "operator": "-", "right": "kiwi",   "result": 1 }
+  ],
+  "target": "kiwi",
+  "answer": 3,
+  "explanation": "🥝=3, 🥕=4. From the equations: 3+4=7 and 4-3=1",
+  "difficulty": "easy"
+}

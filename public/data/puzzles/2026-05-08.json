@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-08",
+  "equations": [
+    { "left": "guitar", "operator": "+", "right": "drum",   "result": 8 },
+    { "left": "drum",   "operator": "-", "right": "guitar", "result": 2 }
+  ],
+  "target": "drum",
+  "answer": 5,
+  "explanation": "🎸=3, 🥁=5. From the equations: 3+5=8 and 5-3=2",
+  "difficulty": "easy"
+}

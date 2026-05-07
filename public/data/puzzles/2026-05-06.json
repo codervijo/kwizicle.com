@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-06",
+  "equations": [
+    { "left": "pizza",  "operator": "+", "right": "burger", "result": 3 },
+    { "left": "burger", "operator": "-", "right": "pizza",  "result": 1 }
+  ],
+  "target": "pizza",
+  "answer": 1,
+  "explanation": "🍕=1, 🍔=2. From the equations: 1+2=3 and 2-1=1",
+  "difficulty": "easy"
+}

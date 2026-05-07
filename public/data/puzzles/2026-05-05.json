@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-05",
+  "equations": [
+    { "left": "cat", "operator": "+", "right": "dog", "result": 5 },
+    { "left": "dog", "operator": "-", "right": "cat", "result": 1 }
+  ],
+  "target": "cat",
+  "answer": 2,
+  "explanation": "🐱=2, 🐶=3. From the equations: 2+3=5 and 3-2=1",
+  "difficulty": "easy"
+}

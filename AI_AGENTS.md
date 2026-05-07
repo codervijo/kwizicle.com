@@ -83,6 +83,32 @@ make test      # → pnpm install + build + test (must be inside container)
 - Build path: this project's `Makefile` → `../Makefile` → `~/work/projects/builder/`
 - Cloudflare deploy constraints: Vite ≥ 6, frozen-lockfile install, no `_redirects` SPA fallback (handled by `wrangler.jsonc`'s `not_found_handling` instead).
 
+## Prompt logging — before every git commit
+
+Before staging or creating any git commit on this repo, append a session
+summary to `docs/Prompts.md` following the existing format:
+
+```
+## YYYY-MM-DD — short title
+
+> One-line gist of what the user asked for in this session.
+
+Optional bullets covering decisions made, files touched, or gotchas worth
+remembering. Keep it under ~10 lines per session unless the session was
+genuinely sprawling.
+```
+
+Rules:
+- Append-only — never edit or delete past entries.
+- Newest entry goes at the bottom (the file's HTML comment header
+  documents this).
+- The H2 line is `## YYYY-MM-DD — title` so the portfolio status tooling
+  can parse "last AI prompt" per project.
+- Summarize the *prompts*, not the diffs. The diffs are in git; the
+  prompt log is the *why*.
+- Do this in the same commit as the changes, or as a leading commit
+  immediately before — never skip.
+
 ## Out of scope / don't touch
 
 - *(leave blank — fill in when something is)*

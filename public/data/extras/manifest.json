@@ -1,0 +1,68 @@
+[
+  {
+    "id": "extra-001",
+    "equations": [
+      { "left": "cat", "operator": "+", "right": "dog", "result": 9 },
+      { "left": "dog", "operator": "-", "right": "cat", "result": 3 }
+    ],
+    "target": "cat",
+    "answer": 3,
+    "explanation": "🐱=3, 🐶=6. From the equations: 3+6=9 and 6-3=3",
+    "difficulty": "easy"
+  },
+  {
+    "id": "extra-002",
+    "equations": [
+      { "left": "pizza",  "operator": "+", "right": "burger", "result": 7 },
+      { "left": "burger", "operator": "-", "right": "pizza",  "result": 1 }
+    ],
+    "target": "burger",
+    "answer": 4,
+    "explanation": "🍕=3, 🍔=4. From the equations: 3+4=7 and 4-3=1",
+    "difficulty": "easy"
+  },
+  {
+    "id": "extra-003",
+    "equations": [
+      { "left": "earth", "operator": "+", "right": "moon", "result": 9 },
+      { "left": "earth", "operator": "-", "right": "moon", "result": 3 }
+    ],
+    "target": "earth",
+    "answer": 6,
+    "explanation": "🌍=6, 🌙=3. From the equations: 6+3=9 and 6-3=3",
+    "difficulty": "easy"
+  },
+  {
+    "id": "extra-004",
+    "equations": [
+      { "left": "guitar", "operator": "+", "right": "drum", "result": 11 },
+      { "left": "guitar", "operator": "-", "right": "drum", "result": 5 }
+    ],
+    "target": "guitar",
+    "answer": 8,
+    "explanation": "🎸=8, 🥁=3. From the equations: 8+3=11 and 8-3=5",
+    "difficulty": "easy"
+  },
+  {
+    "id": "extra-005",
+    "equations": [
+      { "left": "kiwi",   "operator": "+", "right": "carrot", "result": 10 },
+      { "left": "carrot", "operator": "-", "right": "kiwi",   "result": 2 }
+    ],
+    "target": "carrot",
+    "answer": 6,
+    "explanation": "🥝=4, 🥕=6. From the equations: 4+6=10 and 6-4=2",
+    "difficulty": "easy"
+  },
+  {
+    "id": "extra-006",
+    "equations": [
+      { "left": "cat", "operator": "×", "right": "dog", "result": 12 },
+      { "left": "cat", "operator": "+", "right": "dog", "result": 7 }
+    ],
+    "target": "cat",
+    "answer": 3,
+    "explanation": "🐱=3, 🐶=4. From the equations: 3×4=12 and 3+4=7",
+    "difficulty": "medium"
+  }
+]

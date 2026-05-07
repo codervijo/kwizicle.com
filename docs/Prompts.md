@@ -53,3 +53,42 @@ build log pasted in; fix went out, redeploy, next failure surfaced.
   is ever present — or hard-codes whatever ran first).
 - `wrangler.jsonc` `name` must match the CF project name exactly.
 - vite `dedupe` only on directly-declared deps under pnpm strict.
+
+## 2026-05-06 — v0.B/v0.C ship: switching seams, extras mode, SEO basics
+
+> Plan v0 in detail; build asset-name schema with pluggable renderer; build
+> extras mode independent of the daily streak; ship sitemap + favicon; fix
+> stale meta tags; document the prompt-log convention.
+
+- **PRD revised** (`docs/prd.md`) — phased plan v0.A → v1.B with switching
+  seams documented in §7. Pitch and audience still stub paragraphs (working
+  assumptions) until the user nails a one-sentence pitch.
+- **v0.B — switching seams + daily bank.** `src/lib/assets.ts` central
+  registry, `<AssetGlyph>`, `renderMode.ts`. Schema bumped from v2
+  (emoji-baked) to v3 (asset names) — `SCHEMA_VERSION_KEY` flushes old
+  caches. Five daily JSONs seeded from
+  `expoapps/kwizicle/kwizpy/input/next/kwiz{1..5}.json`, themed
+  kiwi/cat/pizza/earth/guitar pairs. Fallbacks trimmed 7→1.
+- **v0.C — extras mode.** `public/data/extras/manifest.json` (6 puzzles),
+  `extras.ts` lib, `<PuzzleGame>` extracted reusable from TodayPage,
+  `/extras` route, "Play another" CTA on TodayPage, extras counter on
+  Stats. Streak/stats untouched by extras; LocalStorage key
+  `kwizicle-extras-solved` is fully separate.
+- **Sitemap + favicon.** `public/sitemap.xml` covers all routes;
+  `public/favicon.svg` (brand-green K tile) replaces Lovable placeholder
+  `favicon.ico` (deleted).
+- **Meta tags rewritten.** `index.html` title/description/OG/Twitter/JSON-LD
+  all still described a Wordle-style "5-letter word puzzle, 6 tries" from
+  the original Lovable export — fixed to actually describe the game.
+- **Prompt-log convention.** New section in `AI_AGENTS.md` requires
+  appending a session summary to this file before every git commit. This
+  entry is the first that follows the rule.
+
+User-stated principle that shaped the architecture: **optionality over
+specifics** — every hedged decision (renderer = emoji vs PNG, var encoding,
+manifest layout, source = local JSON vs API) sits behind a single
+indirection point so flipping it is one edit. PRD §7 enumerates each seam.
+
+Pitch-for-marketing-copy reminder is still pending; user has been asked
+multiple times and deferred. Working assumption used for meta tags this
+commit.

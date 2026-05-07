@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-07",
+  "equations": [
+    { "left": "earth", "operator": "+", "right": "moon",  "result": 6 },
+    { "left": "moon",  "operator": "-", "right": "earth", "result": 2 }
+  ],
+  "target": "moon",
+  "answer": 4,
+  "explanation": "🌍=2, 🌙=4. From the equations: 2+4=6 and 4-2=2",
+  "difficulty": "easy"
+}

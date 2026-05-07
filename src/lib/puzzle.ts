@@ -1,18 +1,22 @@
-// Puzzle data model: equation-based emoji deduction (e.g. 🥝+🥕=5, 🥕-🥝=1)
+import { getEmoji } from "./assets";
+
+// Puzzle data model: equation-based deduction. `left`, `right`, `target` are
+// asset names (see src/lib/assets.ts) — not glyphs. The renderer decides how
+// to display them.
 
 export interface Equation {
-  left: string;   // emoji
+  left: string;
   operator: "+" | "-" | "×" | "÷";
-  right: string;  // emoji
+  right: string;
   result: number;
 }
 
 export interface DailyPuzzle {
   date: string;
   equations: Equation[];
-  target: string;        // emoji to solve for
-  answer: number;        // correct answer
-  explanation: string;   // shown after game
+  target: string;
+  answer: number;
+  explanation: string;
   difficulty: "easy" | "medium" | "hard";
 }
 
@@ -57,92 +61,29 @@ export function getDayNumber(dateStr: string): number {
 
 // --- Fallback puzzles ---
 
-const FALLBACK_PUZZLES: DailyPuzzle[] = [
-  {
-    date: "",
-    equations: [
-      { left: "🥝", operator: "+", right: "🥕", result: 5 },
-      { left: "🥕", operator: "-", right: "🥝", result: 1 },
-    ],
-    target: "🥝", answer: 2,
-    explanation: "🥝=2, 🥕=3. From the equations: 2+3=5 and 3-2=1",
-    difficulty: "easy",
-  },
-  {
-    date: "",
-    equations: [
-      { left: "🐱", operator: "+", right: "🐶", result: 10 },
-      { left: "🐶", operator: "-", right: "🐱", result: 2 },
-    ],
-    target: "🐱", answer: 4,
-    explanation: "🐱=4, 🐶=6. From the equations: 4+6=10 and 6-4=2",
-    difficulty: "easy",
-  },
-  {
-    date: "",
-    equations: [
-      { left: "🍕", operator: "+", right: "🍔", result: 9 },
-      { left: "🍕", operator: "-", right: "🍔", result: 3 },
-    ],
-    target: "🍔", answer: 3,
-    explanation: "🍕=6, 🍔=3. From the equations: 6+3=9 and 6-3=3",
-    difficulty: "easy",
-  },
-  {
-    date: "",
-    equations: [
-      { left: "🌍", operator: "+", right: "🌙", result: 11 },
-      { left: "🌍", operator: "-", right: "🌙", result: 3 },
-    ],
-    target: "🌙", answer: 4,
-    explanation: "🌍=7, 🌙=4. From the equations: 7+4=11 and 7-4=3",
-    difficulty: "easy",
-  },
-  {
-    date: "",
-    equations: [
-      { left: "🎸", operator: "+", right: "🥁", result: 12 },
-      { left: "🎸", operator: "-", right: "🥁", result: 4 },
-    ],
-    target: "🥁", answer: 4,
-    explanation: "🎸=8, 🥁=4. From the equations: 8+4=12 and 8-4=4",
-    difficulty: "easy",
-  },
-  {
-    date: "",
-    equations: [
-      { left: "🚀", operator: "+", right: "⭐", result: 15 },
-      { left: "🚀", operator: "-", right: "⭐", result: 5 },
-    ],
-    target: "⭐", answer: 5,
-    explanation: "🚀=10, ⭐=5. From the equations: 10+5=15 and 10-5=5",
-    difficulty: "easy",
-  },
-  {
-    date: "",
-    equations: [
-      { left: "🎨", operator: "×", right: "🖌️", result: 12 },
-      { left: "🎨", operator: "+", right: "🖌️", result: 7 },
-    ],
-    target: "🖌️", answer: 3,
-    explanation: "🎨=4, 🖌️=3. From the equations: 4×3=12 and 4+3=7",
-    difficulty: "medium",
-  },
-];
+// Single safety-net used only when no daily JSON is reachable. Real puzzles
+// live under public/data/puzzles/.
+const SAFETY_NET_PUZZLE: DailyPuzzle = {
+  date: "",
+  equations: [
+    { left: "kiwi",   operator: "+", right: "carrot", result: 5 },
+    { left: "carrot", operator: "-", right: "kiwi",   result: 1 },
+  ],
+  target: "kiwi",
+  answer: 2,
+  explanation: "🥝=2, 🥕=3. From the equations: 2+3=5 and 3-2=1",
+  difficulty: "easy",
+};
 
 function getFallbackPuzzle(dateStr: string): DailyPuzzle {
-  const epoch = new Date("2025-01-01").getTime();
-  const target = new Date(dateStr).getTime();
-  const dayIndex = Math.floor((target - epoch) / 86400000);
-  const idx = ((dayIndex % FALLBACK_PUZZLES.length) + FALLBACK_PUZZLES.length) % FALLBACK_PUZZLES.length;
-  return { ...FALLBACK_PUZZLES[idx], date: dateStr };
+  return { ...SAFETY_NET_PUZZLE, date: dateStr };
 }
 
 // --- Schema migration ---
 
 const PUZZLE_CACHE_KEY = "kwizicle-puzzle-cache";
 const SCHEMA_VERSION_KEY = "kwizicle-schema-version";
-const CURRENT_SCHEMA_VERSION = 2; // bumped from v1 (pairs) to v2 (equations)
+const CURRENT_SCHEMA_VERSION = 3; // v3: asset-name based (left/right/target are names, not glyphs)
 
 function migrateIfNeeded(): void {
   try {
@@ -234,8 +175,10 @@ export function updateStatsAfterGame(won: boolean, attemptsUsed: number): void {
 
 export function generateShareText(puzzle: DailyPuzzle, state: PuzzleState): string {
   const dayNum = getDayNumber(puzzle.date);
+  // Share text always uses emoji form — PNG renderer doesn't help once text
+  // lands in Slack/Twitter/iMessage.
   const eqStr = puzzle.equations
-    .map(eq => `${eq.left}${eq.operator}${eq.right}=${eq.result}`)
+    .map(eq => `${getEmoji(eq.left)}${eq.operator}${getEmoji(eq.right)}=${eq.result}`)
     .join(" ");
   const status = state.solved
     ? `✅ ${state.attempts.length}/${MAX_ATTEMPTS}`
@@ -244,7 +187,7 @@ export function generateShareText(puzzle: DailyPuzzle, state: PuzzleState): stri
     ? Math.round((state.endTime - state.startTime) / 1000)
     : null;
 
-  let text = `Kwizicle #${dayNum}\n${eqStr}\n${puzzle.target}=? ${status}`;
+  let text = `Kwizicle #${dayNum}\n${eqStr}\n${getEmoji(puzzle.target)}=? ${status}`;
   if (time) text += `\n⏱️ ${time}s`;
   text += `\n\nPlay → kwizicle.com`;
   return text;

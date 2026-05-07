@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import { AssetGlyph } from "@/components/AssetGlyph";
 
 export default function HowToPlayPage() {
   return (
@@ -19,13 +20,13 @@ export default function HowToPlayPage() {
 
         <div className="bg-[hsl(var(--primary))] rounded-xl p-4 flex flex-col gap-3">
           <div className="flex items-center gap-3 text-2xl justify-center">
-            <span>🥝</span><span className="text-primary-foreground font-heading font-bold">+</span><span>🥕</span><span className="text-primary-foreground font-heading font-bold">=</span><span className="font-heading font-bold text-primary-foreground">5</span>
+            <AssetGlyph name="kiwi" /><span className="text-primary-foreground font-heading font-bold">+</span><AssetGlyph name="carrot" /><span className="text-primary-foreground font-heading font-bold">=</span><span className="font-heading font-bold text-primary-foreground">5</span>
           </div>
           <div className="flex items-center gap-3 text-2xl justify-center">
-            <span>🥕</span><span className="text-primary-foreground font-heading font-bold">−</span><span>🥝</span><span className="text-primary-foreground font-heading font-bold">=</span><span className="font-heading font-bold text-primary-foreground">1</span>
+            <AssetGlyph name="carrot" /><span className="text-primary-foreground font-heading font-bold">−</span><AssetGlyph name="kiwi" /><span className="text-primary-foreground font-heading font-bold">=</span><span className="font-heading font-bold text-primary-foreground">1</span>
           </div>
           <div className="flex items-center gap-3 text-2xl justify-center border-t border-primary-foreground/20 pt-3">
-            <span>🥝</span><span className="text-primary-foreground font-heading font-bold">=</span><span className="font-heading font-bold text-primary-foreground/60">?</span>
+            <AssetGlyph name="kiwi" /><span className="text-primary-foreground font-heading font-bold">=</span><span className="font-heading font-bold text-primary-foreground/60">?</span>
           </div>
         </div>
 
