@@ -76,3 +76,12 @@ For each hedged decision, the seam that lets us change our minds without ripplin
 | Theme coherence | mix per puzzle | Authoring concern, no code |
 | Streak vs extras tracking | separate localStorage keys | Independent reducers, merge or split later without touching either side |
 | Schema migration | `SCHEMA_VERSION_KEY` already in `puzzle.ts` | Bump version → cache flush, existing pattern |
+
+## Problem
+
+Daily-puzzle players burn through Wordle/Connections in two minutes and want another quick, share-friendly brainteaser before moving on with their day. Kwizicle gives them a single emoji-equation deduction puzzle per day (e.g. solve for 🥝 given 🥝+🥕=5, 🥕−🥝=1) with a 3-attempt loop, a streak, and an opt-in "play another" mode that doesn't dilute the streak.
+
+## Users
+
+Casual daily-puzzle players on mobile-web — the same audience that already plays Wordle, Connections, and Strands. They care about: a fast session (under ~2 min), a streak worth protecting, shareable results, and zero friction (no account, no app install). We hypothesize the addressable pool is in the low millions of daily players globally (estimated ~2–5M daily-puzzle regulars — verify), of which kwizicle would realistically reach a niche slice via word-of-mouth share-text. Willingness to pay is near zero at this stage; engagement signal is return-visits and streak length, not revenue.
+

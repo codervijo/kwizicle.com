@@ -112,3 +112,17 @@ Rules:
 ## Out of scope / don't touch
 
 - *(leave blank — fill in when something is)*
+
+## Building info
+
+This project's `Makefile` forwards every target to `../Makefile`
+(the sites/ workspace) which delegates per-stack work to the central
+builder at `~/work/projects/builder/`. Common: `make deps`, `make dev`,
+`make build`. Don't duplicate build logic per-site.
+
+## Deployment info
+
+Cloudflare Pages. Push to `main` triggers an auto-build via the
+`wrangler.jsonc` config; build output is `dist/`. Custom domain
+configured via the CF Pages dashboard.
+
