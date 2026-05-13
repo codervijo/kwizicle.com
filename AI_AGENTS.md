@@ -126,3 +126,17 @@ Cloudflare Pages. Push to `main` triggers an auto-build via the
 `wrangler.jsonc` config; build output is `dist/`. Custom domain
 configured via the CF Pages dashboard.
 
+## Versioning
+
+This project follows the two-level versioning convention canonical
+to the portfolio (see `sites/portfolio/AI_AGENTS.md` for the full
+statement):
+
+- **`vN`** — major capability tier (SemVer-MAJOR semantics).
+- **`vN.X`** — phase letter within a tier (A, B, C, …) for
+  internal slicing.
+- **`vN.X.Y`** — numeric sub-phase for follow-up work that lands
+  after `vN.X` shipped.
+
+Track current phase + completed work in `docs/prd.md`.
+
