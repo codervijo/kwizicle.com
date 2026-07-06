@@ -64,3 +64,31 @@ https://search.google.com/search-console directly.
   the sitemap.
 - **Result:** TBD — review 2026-06-06
 - **Learning:** TBD
+
+## 2026-07-06 — prerender the SPA + ship keyword pages to unblock indexing
+- **Status:** active
+- **KPI:** indexed-page count in GSC (target: 3), plus impressions for the
+  target queries — `emoji puzzle`, `emoji math puzzle` / `math emoji puzzle`,
+  `emoji puzzles with answers`.
+- **Baseline (GSC 28d, pulled 2026-07-06 via `lamill project seo kwizicle.com
+  --refresh`):** 0 impressions, 0 clicks. Coverage: only `/` is indexed
+  (`submitted_indexed`, last crawled 11d ago); the two new content pages are
+  `url_is_unknown_to_google` (deployed hours ago, not yet crawled). Sitemap
+  submitted and fetched by Google ~4h ago. Prior traffic was ~zero because the
+  prod HTML was a blank CSR `<div id="root">` — indexing was *blocked*, not
+  slow (this is why the 2026-05-09 entry never produced traffic).
+- **Action:** shipped build-time prerendering (`vite-react-ssg`, commit
+  `37250e8`) so three routes now serve real, crawlable `<body>` content without
+  JS: `/` (target *emoji puzzle*, `WebApplication` schema), `/emoji-math-puzzle`
+  (target *emoji math puzzle*, KD 0; how-to-play + `FAQPage` schema), and
+  `/blog/emoji-puzzles-with-answers` (target *emoji puzzles with answers*; 6
+  worked examples). Per-page canonicals + OG image; sitemap trimmed to the 3
+  prerendered routes. Sitemap is already submitted + fetched. **Next:** Request
+  Indexing on the two uncrawled URLs (`/emoji-math-puzzle`,
+  `/blog/emoji-puzzles-with-answers`) in Search Console.
+- **Result:** TBD — review 2026-08-03.
+- **Learning:** TBD. At review, check: are all 3 pages indexed (GSC → Pages)?
+  Any impressions on the target queries? Does the KD-0 term
+  (`emoji math puzzle`) rank first, as hypothesized? If pages are crawled but
+  *not* indexed, that points to thin-content / low-authority rather than a
+  crawl problem — different fix.

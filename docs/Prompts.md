@@ -130,3 +130,17 @@ commit.
   standalone (`--ignore-workspace`) so CF's `--frozen-lockfile` install passes.
 - Also generated 3 extra puzzle-card PNGs (`public/puzzles/`) — committed but
   left unwired; operator is evaluating the vector style.
+
+## 2026-07-06 — verify live deploy + growth-log entry
+
+> Push, verify the live site once CF finishes, then log the SEO ship in the
+> growth log — with a real GSC baseline synced via the lamill tool.
+
+- Pushed `37250e8`; CF auto-built. Verified live via curl (crawler JS-off view):
+  all 3 prerendered pages serve real `<body>`, single self-canonical each
+  (duplicate-canonical bug gone), `WebApplication` + `FAQPage` JSON-LD present,
+  sitemap lists only the 3 routes, `og.png` serves as `image/png`.
+- Synced GSC via `lamill project seo kwizicle.com --refresh`: 0 imp / 0 clicks
+  (28d); sitemap already fetched ~4h ago; `/` indexed, the 2 new pages still
+  `url_is_unknown_to_google` (expected crawl lag). Recorded as the baseline in
+  `docs/growth.md` with review 2026-08-03.
