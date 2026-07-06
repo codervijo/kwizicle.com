@@ -92,3 +92,41 @@ indirection point so flipping it is one edit. PRD §7 enumerates each seam.
 Pitch-for-marketing-copy reminder is still pending; user has been asked
 multiple times and deferred. Working assumption used for meta tags this
 commit.
+
+## 2026-07-06 — SEO: prerendering + keyword content pages
+
+> The prod HTML shell was blank (CSR, no prerender) so crawlers indexed an
+> empty page. Fix indexability first, then widen the indexable surface with
+> keyword-targeted pages (Ahrefs targets: "emoji puzzle", "emoji math puzzle"
+> KD 0, "emoji puzzles with answers"). Work step-by-step, stop to verify.
+
+- **Diagnosis:** confirmed CSR-with-no-prerender — `dist/index.html` body was
+  just `<div id="root">`. Head SEO already existed; only body was empty.
+- **Prerendering (`vite-react-ssg`):** converted router to the data-router with
+  a root `Layout` (providers + `<Outlet/>`); chose vite-react-ssg over
+  react-snap because it renders in Node (no headless browser → works in the
+  docker/CF build env). `ssgOptions.includedRoutes` prerenders ONLY `/`,
+  `/emoji-math-puzzle`, `/blog/emoji-puzzles-with-answers`; the daily game
+  stays client-only via `<ClientOnly>`. Homepage became a hub (game embedded +
+  SEO hero); `/today` → `/`.
+- **Head consolidation:** moved all per-page SEO (title/description/canonical/
+  OG/Twitter/JSON-LD) into per-route `<Head>` (helmet) and stripped the static
+  SEO block from `index.html` — fixes a duplicate-`<title>`/duplicate-canonical
+  bug where every prerendered page canonicalized to the homepage.
+- **Content:** `/` targets "emoji puzzle" + `WebApplication` JSON-LD;
+  `/emoji-math-puzzle` (KD-0 term, doubles as how-to-play) with worked example,
+  tips, FAQ + `FAQPage` JSON-LD; `/blog/emoji-puzzles-with-answers` — 6 real
+  puzzles with answers in `<details>`. Real `og.png` (1200×630) rendered via
+  Inkscape as vector art (server can't rasterize the color-emoji font).
+- **Crawl + scaffolding:** sitemap lists only prerendered routes; `/how-to-play`
+  → `/emoji-math-puzzle` (old page deleted); dormant `/archive`, `/puzzle/:date`,
+  `/answer/:date` scaffolded (NOT prerendered/sitemapped) per §v0.C-style
+  "build dormant" rationale.
+- **Validation:** Playwright (in the Playwright container) against the built
+  `dist/` served CF-style — all 3 prerendered pages hydrate clean, the game is
+  interactive, redirects + client nav work.
+- **Deploy fix:** the project `pnpm-lock.yaml` had NOT picked up
+  `vite-react-ssg` (pnpm hoisted it to the `sites/` workspace lock); regenerated
+  standalone (`--ignore-workspace`) so CF's `--frozen-lockfile` install passes.
+- Also generated 3 extra puzzle-card PNGs (`public/puzzles/`) — committed but
+  left unwired; operator is evaluating the vector style.

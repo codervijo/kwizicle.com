@@ -1,5 +1,7 @@
-import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
+import { ViteReactSSG } from "vite-react-ssg";
+import { routes } from "./routes";
 import "./index.css";
 
-createRoot(document.getElementById("root")!).render(<App />);
+// ViteReactSSG owns both the build-time prerender and the client-side hydration
+// (it auto-mounts to #root in the browser). No manual createRoot(...).render().
+export const createRoot = ViteReactSSG({ routes });

@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  List ONLY routes that return real, crawlable HTML without JS — i.e. the
+  prerendered routes (see vite.config.ts `ssgOptions.includedRoutes`).
+  Deliberately excluded:
+    - /today            → client-side redirect to /
+    - /extras, /stats,
+      /how-to-play      → client-side-rendered; blank to crawlers (no prerender)
+    - /archive, /puzzle/:date, /answer/:date (Step 6) → dormant until daily
+      players exist; enable here + prerender then.
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kwizicle.com/</loc>
@@ -6,23 +16,13 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kwizicle.com/today</loc>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://kwizicle.com/extras</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kwizicle.com/how-to-play</loc>
+    <loc>https://kwizicle.com/emoji-math-puzzle</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://kwizicle.com/stats</loc>
+    <loc>https://kwizicle.com/blog/emoji-puzzles-with-answers</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>

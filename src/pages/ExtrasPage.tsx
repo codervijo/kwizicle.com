@@ -65,7 +65,7 @@ export default function ExtrasPage() {
     return (
       <div className="flex flex-col items-center flex-1 px-4 py-6 max-w-md mx-auto">
         <div className="w-full flex items-center mb-6">
-          <Link to="/today" className="p-2 -ml-2 rounded-lg hover:bg-muted">
+          <Link to="/" className="p-2 -ml-2 rounded-lg hover:bg-muted">
             <ArrowLeft className="w-5 h-5" />
           </Link>
           <h1 className="text-2xl font-heading font-bold mx-auto pr-9">Extras</h1>
@@ -79,7 +79,7 @@ export default function ExtrasPage() {
               : `You've solved all ${totalSolved} extras. New ones coming soon.`}
           </p>
           <Link
-            to="/today"
+            to="/"
             className="mt-4 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity"
           >
             Back to today
@@ -99,7 +99,7 @@ export default function ExtrasPage() {
         Play another
       </button>
       <Link
-        to="/today"
+        to="/"
         className="text-sm text-muted-foreground hover:text-foreground transition-colors"
       >
         Done — back to today
@@ -110,7 +110,7 @@ export default function ExtrasPage() {
   return (
     <div className="flex flex-col flex-1">
       <div className="px-4 pt-3 flex items-center justify-between max-w-md mx-auto w-full">
-        <Link to="/today" className="p-2 -ml-2 rounded-lg hover:bg-muted">
+        <Link to="/" className="p-2 -ml-2 rounded-lg hover:bg-muted">
           <ArrowLeft className="w-5 h-5" />
         </Link>
         <span className="text-sm text-muted-foreground">

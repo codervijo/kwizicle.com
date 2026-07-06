@@ -13,7 +13,7 @@ export default function StatsPage() {
   return (
     <div className="flex flex-col items-center flex-1 px-4 py-6 max-w-md mx-auto">
       <div className="w-full flex items-center mb-6">
-        <Link to="/today" className="p-2 -ml-2 rounded-lg hover:bg-muted">
+        <Link to="/" className="p-2 -ml-2 rounded-lg hover:bg-muted">
           <ArrowLeft className="w-5 h-5" />
         </Link>
         <h1 className="text-2xl font-heading font-bold mx-auto pr-9">Statistics</h1>

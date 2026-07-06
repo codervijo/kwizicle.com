@@ -14,7 +14,7 @@ export function TopBar({ streak, onToggleTheme, isDark }: TopBarProps) {
 
   return (
     <header className="flex items-center justify-between px-4 py-3 border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
-      <Link to="/today" className="flex items-center gap-1.5">
+      <Link to="/" className="flex items-center gap-1.5">
         <span className="text-xl font-heading font-bold tracking-tight text-foreground">
           Kwizicle
         </span>
@@ -27,10 +27,10 @@ export function TopBar({ streak, onToggleTheme, isDark }: TopBarProps) {
           </span>
         )}
         <Link
-          to="/how-to-play"
+          to="/emoji-math-puzzle"
           className={cn(
             "p-2 rounded-lg transition-colors hover:bg-muted",
-            location.pathname === "/how-to-play" && "bg-muted"
+            location.pathname === "/emoji-math-puzzle" && "bg-muted"
           )}
         >
           <HelpCircle className="w-5 h-5 text-muted-foreground" />
