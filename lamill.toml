@@ -11,6 +11,10 @@ custom_domains = [
     "kwizicle.com",
 ]
 
+[index]
+indexnow_key = "748cd563fecfe8afa57359e33ed8353b"
+indexnow_enabled = true
+
 [stack]
 framework = "vite-react"
 
