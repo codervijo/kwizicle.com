@@ -92,3 +92,34 @@ https://search.google.com/search-console directly.
   (`emoji math puzzle`) rank first, as hypothesized? If pages are crawled but
   *not* indexed, that points to thin-content / low-authority rather than a
   crawl problem — different fix.
+
+## 2026-07-06 — deepen the homepage so `/` can actually rank for "emoji puzzle"
+- **Status:** active
+- **KPI:** impressions + position for **"emoji puzzle"** (and variants: "daily
+  emoji puzzle", "free emoji puzzle") on `/`; secondarily whether `/` gets
+  indexed and *stays* indexed rather than being dropped as thin.
+- **Baseline (2026-07-06):** `/` prerendered but thin — ~1 sentence / ~1,084
+  chars of crawlable body, a single `<h1>`, because the interactive game is
+  (correctly) `<ClientOnly>` and no static copy surrounded it. So the page
+  targeting the site's *hardest* head term had the *least* content of the three
+  prerendered pages. 0 imp / 0 clicks (same GSC pull as the entry above).
+- **Action:** added static prerendered SEO body around the client-only game in
+  `HomePage.tsx` — intro prose (anchor for "emoji puzzle"), a "why play"/streak
+  block with a math-vs-rebus disambiguation sentence, one unsolved 🍔/🐶 teaser
+  linking to the full worked example, and text internal links to
+  `/emoji-math-puzzle` + `/blog/emoji-puzzles-with-answers`. Kept it
+  deliberately *lighter* than `/emoji-math-puzzle` and used the exact phrase
+  "emoji math puzzle" only once (a link anchor) to avoid cannibalizing the
+  how-to page. Body went ~1,084 → ~1,878 chars.
+- **Result:** TBD — review 2026-08-03 (same window as the prerender entry).
+- **Learning so far (process, not yet outcome):** "prerendered" ≠ "indexable
+  content." SSG firing only guarantees the *shell* is static; if the payload is
+  behind `<ClientOnly>`, the crawlable page can still be near-empty. When a
+  route's main value is an interactive, state-driven widget, the SEO body has to
+  be authored *separately and statically around it* — don't assume the framework
+  gives you content just because the route prerenders. Also: on a multi-page
+  keyword cluster, decide the head term per page up front and enforce phrase
+  discipline (one page owns "emoji puzzle", another owns "emoji math puzzle"),
+  or the pages compete with each other. At review, check whether `/` earns
+  impressions on "emoji puzzle" specifically (vs the long-tail pages) — that's
+  the signal this fix worked, not just total-impressions-up.

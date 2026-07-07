@@ -144,3 +144,37 @@ commit.
   (28d); sitemap already fetched ~4h ago; `/` indexed, the 2 new pages still
   `url_is_unknown_to_google` (expected crawl lag). Recorded as the baseline in
   `docs/growth.md` with review 2026-08-03.
+
+## 2026-07-06 — homepage thin-content fix (SEO body around the client-only game)
+
+> View-source of `/` showed only a one-sentence hero: SSG fires, but the game
+> (`TodayPage`) is correctly `<ClientOnly>`, so the homepage — targeting the
+> HARDEST term "emoji puzzle" — had the LEAST crawlable content of the 3
+> prerendered pages (~1k chars vs ~3k on `/emoji-math-puzzle`). Add static
+> prerendered SEO body AROUND the client-only game; keep the game client-only.
+
+- **Not an SSG bug.** `data-server-rendered="true"` was already present; the
+  blank-shell bug was gone. The gap was content depth: I'd wrapped the game in
+  `<ClientOnly>` last session but never added static body copy around it.
+- **Anti-cannibalization was the whole constraint.** `/` and
+  `/emoji-math-puzzle` have distinct jobs/keywords and must reinforce, not
+  compete. Rules applied in `HomePage.tsx`: homepage primary phrase stays
+  "emoji puzzle" (11× in output); the exact phrase "emoji math puzzle" used
+  **once**, only as the how-to link anchor (also retitled `og:image:alt` off
+  "…math puzzle" → "…emoji puzzle" to hold that to one). No second FAQ / no
+  `FAQPage` JSON-LD on `/` (that schema stays unique to `/emoji-math-puzzle`).
+- **Blocks added** (static, prerendered, around the `<ClientOnly>` game):
+  (1) intro prose = ranking anchor for "emoji puzzle"; (2) "why play" + a
+  math-vs-rebus disambiguation sentence to catch "emoji guess puzzle" searchers
+  and steer AI citations; (3) ONE unsolved teaser using 🍔/🐶 — deliberately a
+  different pair from the how-to page's 🥝/🥕 and the blog's pizza/cat/earth/
+  guitar — teased, not solved, linking out to the full worked example;
+  (4) text internal links (real anchor text) to the how-to + blog pages.
+- **Result:** prerendered `/` body ~1 sentence → **~1,878 chars**, still lighter
+  than `/emoji-math-puzzle` (~3,060) so it's complementary, not a lighter copy.
+  Canonical still single self-referential `https://kwizicle.com/`.
+- `/stats` needed no change — already excluded from `sitemap.xml` and serves no
+  prerendered content to crawlers.
+- Verified in the docker build (`funny_shannon`): `pnpm build` green, all 3
+  pages prerender; grep-checks on `dist/index.html` confirm the counts above.
+  Content/copy change only — no logic touched, no suite run.
