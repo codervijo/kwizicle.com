@@ -178,3 +178,17 @@ commit.
 - Verified in the docker build (`funny_shannon`): `pnpm build` green, all 3
   pages prerender; grep-checks on `dist/index.html` confirm the counts above.
   Content/copy change only — no logic touched, no suite run.
+
+## 2026-10-23 — overdue growth review (prerender + homepage entries)
+
+> Do the overdue 2026-08-03 growth review and log results in docs/growth.md.
+
+- GSC via `lamill project seo --refresh` + `portfolio.gsc.query_with_dims`
+  (treg has no GSC connection; Ahrefs has no kwizicle project).
+- Since 2026-07-06: 32 imp / 2 clicks / pos 2.7, all on `/`, ramping from
+  ~2026-09-30. Indexed 1/3 — the two content pages are still
+  `discovered_not_indexed` after ~15 weeks → authority problem, not crawl lag.
+- Query rows all withheld (anonymization threshold), so "emoji puzzle"
+  attribution is unknowable; homepage entry extended to 2026-11-20.
+- Found: `public/data/puzzles/` ends 2026-05-08 — every day since has served
+  the same safety-net puzzle.

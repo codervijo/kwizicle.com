@@ -62,8 +62,11 @@ https://search.google.com/search-console directly.
 - **Action:** project scaffolded via `portfolio new bootstrap`; first deploy
   pending. After deploy: verify in GSC as `sc-domain:kwizicle.com` and submit
   the sitemap.
-- **Result:** TBD — review 2026-06-06
-- **Learning:** TBD
+- **Result (reviewed 2026-10-23, late):** 0 impressions through 2026-07-06.
+  Superseded by the 2026-07-06 prerender entry below, which found the cause.
+- **Learning:** deploy + sitemap alone produced nothing because prod HTML
+  was a blank CSR shell. See the prerender entry.
+- **Status (2026-10-23):** failed → superseded
 
 ## 2026-07-06 — prerender the SPA + ship keyword pages to unblock indexing
 - **Status:** active
@@ -86,8 +89,27 @@ https://search.google.com/search-console directly.
   prerendered routes. Sitemap is already submitted + fetched. **Next:** Request
   Indexing on the two uncrawled URLs (`/emoji-math-puzzle`,
   `/blog/emoji-puzzles-with-answers`) in Search Console.
-- **Result:** TBD — review 2026-08-03.
-- **Learning:** TBD. At review, check: are all 3 pages indexed (GSC → Pages)?
+- **Result (reviewed 2026-10-23, ~11 wk late; GSC via `lamill project seo
+  --refresh` + `portfolio.gsc.query_with_dims`):**
+  - Indexed: **1/3**. `/` = `submitted_indexed`; `/emoji-math-puzzle` and
+    `/blog/emoji-puzzles-with-answers` = **`discovered_not_indexed`** —
+    ~15 weeks after deploy, despite sitemap fetch (7d ago) and homepage
+    internal links to both.
+  - Traffic 2026-07-06 → 2026-10-21: **32 impressions, 2 clicks, avg pos
+    2.7 — 100% on `/`**, 0 on the two content pages. Near-zero until
+    2026-09-30 (4 imp in Jul–Sep), then ~1–6 imp/day in October.
+  - Target-query check: **not answerable.** GSC returned zero `query` rows
+    (all below the anonymization threshold), so impressions can't be tied
+    to `emoji puzzle` / `emoji math puzzle`.
+- **Status (2026-10-23):** failed on the indexing KPI (1/3, target 3).
+- **Learning:** prerendering removed the *crawl* blocker (`/` now indexes
+  and gets impressions), but it did not get the new pages indexed.
+  `discovered_not_indexed` persisting 15 weeks with internal links already
+  in place is not crawl lag — Google is choosing not to crawl them, which
+  points to low site authority (no external signal) rather than a
+  technical fault. Waiting longer is unlikely to fix it. Next lever is
+  outside signal (backlinks / shares) or consolidating content onto `/`,
+  not more on-page work. Original checklist, for reference: are all 3 pages indexed (GSC → Pages)?
   Any impressions on the target queries? Does the KD-0 term
   (`emoji math puzzle`) rank first, as hypothesized? If pages are crawled but
   *not* indexed, that points to thin-content / low-authority rather than a
@@ -111,7 +133,16 @@ https://search.google.com/search-console directly.
   deliberately *lighter* than `/emoji-math-puzzle` and used the exact phrase
   "emoji math puzzle" only once (a link anchor) to avoid cannibalizing the
   how-to page. Body went ~1,084 → ~1,878 chars.
-- **Result:** TBD — review 2026-08-03 (same window as the prerender entry).
+- **Result (reviewed 2026-10-23):** `/` is indexed and **stayed** indexed
+  (last crawled ~2w ago) — the "dropped as thin" risk did not happen. `/`
+  earned all 32 impressions / 2 clicks since 2026-07-06, avg position 2.7,
+  ramping from October. **Whether any of it is "emoji puzzle" is unknown**:
+  GSC withholds every query row (below the privacy threshold).
+  *Inference, unverified:* a consistent position of ~1–3 on a brand-new,
+  zero-authority site fits navigational/branded queries (`kwizicle`) far
+  better than the competitive head term.
+- **Status (2026-10-23):** testing — extended; review 2026-11-20. Volume is
+  too small to attribute.
 - **Learning so far (process, not yet outcome):** "prerendered" ≠ "indexable
   content." SSG firing only guarantees the *shell* is static; if the payload is
   behind `<ClientOnly>`, the crawlable page can still be near-empty. When a
