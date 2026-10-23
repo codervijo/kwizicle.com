@@ -211,3 +211,15 @@ commit.
 - Gotchas: archive/sitemap only advance on rebuild (daily CF rebuild not set
   up). Client-only routes log React #418 on load — pre-existing (SPA fallback
   serves homepage HTML), confirmed on a HEAD build.
+
+## 2026-10-23 — v0.F daily Cloudflare rebuild
+
+> Set up a daily Cloudflare rebuild so the archive/answer pages and sitemap
+> advance without a push. Placed as v0.F; trigger from GitHub Actions.
+
+- `.github/workflows/daily-rebuild.yml`: cron 12:15 UTC (just after the prior
+  day ends everywhere, matching `isDayOver`) + `workflow_dispatch`; POSTs a
+  Workers Builds deploy hook (no API token — hook URL is the secret
+  `CF_DEPLOY_HOOK_URL`). Response parsed with ✓/✗/↷ markers; 404 path
+  verified against the live CF API with a bogus hook ID.
+- Operator still owes: create the hook in the CF dashboard + add the secret.

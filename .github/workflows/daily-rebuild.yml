@@ -1,0 +1,57 @@
+# v0.F — daily Cloudflare rebuild.
+#
+# The archive (/archive, /answer/<date>) and sitemap are prerendered at build
+# time, so they only advance when the site rebuilds. This POSTs a Workers
+# Builds deploy hook once a day so yesterday's answer page goes live without a
+# push. 12:15 UTC = just after the previous day has ended in every timezone
+# (see isDayOver in src/lib/archive.ts).
+#
+# Setup: Cloudflare dashboard → Workers & Pages → kwizicle → Settings → Builds
+# → Deploy Hooks (branch: main), then store the URL as the repo secret
+# CF_DEPLOY_HOOK_URL.
+
+name: daily-rebuild
+
+on:
+  schedule:
+    - cron: "15 12 * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Trigger Cloudflare deploy hook
+        env:
+          HOOK: ${{ secrets.CF_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "✗ CF_DEPLOY_HOOK_URL secret is not set — create a deploy hook in Cloudflare and add it under repo Settings → Secrets → Actions"
+            exit 1
+          fi
+
+          code=$(curl -sS -o resp.json -w '%{http_code}' --retry 3 --retry-all-errors -X POST "$HOOK") || {
+            echo "↷ network error reaching Cloudflare — transient, re-run the workflow"
+            exit 1
+          }
+
+          if [ "$code" = "404" ]; then
+            echo "✗ HTTP 404 — deploy hook not found (deleted or URL wrong); recreate it and update the secret"
+            exit 1
+          elif [ "$code" = "429" ]; then
+            echo "↷ HTTP 429 — rate limited by Cloudflare; re-run later"
+            exit 1
+          elif [ "$(jq -r '.success' resp.json 2>/dev/null)" != "true" ]; then
+            echo "✗ HTTP $code — Cloudflare rejected the hook:"
+            jq -r '.errors[]? | "  \(.code): \(.message)"' resp.json 2>/dev/null || cat resp.json
+            exit 1
+          fi
+
+          if [ "$(jq -r '.result.already_exists // false' resp.json)" = "true" ]; then
+            echo "✓ build already queued: $(jq -r '.result.build_uuid' resp.json)"
+          else
+            echo "✓ build started: $(jq -r '.result.build_uuid' resp.json) ($(jq -r '.result.worker' resp.json)@$(jq -r '.result.branch' resp.json))"
+          fi

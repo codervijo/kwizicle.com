@@ -1,8 +1,8 @@
 ---
 project: kwizicle.com
 prd_version: 2
-project_version: v0.E
-status: v0.D + v0.E built, uncommitted
+project_version: v0.F
+status: v0.F built — awaiting deploy-hook secret
 owner: Vijo
 last_updated: 2026-10-23
 ---
@@ -49,6 +49,7 @@ last_updated: 2026-10-23
 | **v0.C** *(built)* | next-kwiz mode | `public/data/extras/manifest.json` · `extras.ts` loader + solved-set tracker · post-game "Play another" CTA · separate counter on Stats page · streak untouched by extras |
 | **v0.D** *(built)* | daily content through 2026-12-31 | Claude-authored (generator kept outside the repo; output committed as data) — 237 dated puzzles in the existing v3 asset-name schema: **backfill** 2026-05-09 → 2026-10-22 (167) + **forward-fill** 2026-10-23 → 2026-12-31 (70) into `public/data/puzzles/` · batch validator (unique solution, integer answer = `answer`, `target` appears in equations, every asset name in `assets.ts`, no back-to-back repeats of an asset pair) · difficulty mix across the week · no puzzle reuses the safety-net or SEO-page examples (🥝/🥕, 🍔/🐶, the blog's six) · end-of-data alert so the daily never silently falls back again · expand `assets.ts` vocabulary so 237 days don't cycle 10 glyphs |
 | **v0.E** *(built)* | wake archive routes | Prerender `/archive` + `/answer/:date` for every past date (build-date cutoff; today/future never prerendered or revealed) · per-date title/meta/canonical · answer page = equations + answer + worked explanation + prev/next + "play it" link · `/puzzle/:date` playable via `<PuzzleGame>` with session-only state (never touches streak/stats), client-only, not in sitemap · sitemap generated at build from puzzle data (replaces static `public/sitemap.xml`) · archive linked from homepage |
+| **v0.F** *(built)* | daily rebuild | Scheduled GitHub Actions workflow (12:15 UTC — just after the previous day ends in every timezone) POSTs a Cloudflare Workers Builds deploy hook so `/archive`, `/answer/<date>` and the sitemap advance daily without a push · hook URL stored as GitHub secret `CF_DEPLOY_HOOK_URL` · manual `workflow_dispatch` trigger · response parsed, failures surfaced in the run log |
 | **v1.A** | adopt kwizpy | Coordinate sibling repo to emit our schema (asset names + `target` + `result` + `difficulty`) · drop `abstractVars.ts` once kwizpy emits asset names directly · scheduled bulk publish |
 | **v1.B** | pipeline polish | Solvability validator · difficulty curve · 2027+ puzzles pre-published · automation/cron for daily emit |
 | **v2.x** | TBD | — |
