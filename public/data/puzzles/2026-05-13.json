@@ -1,0 +1,12 @@
+{
+  "date": "2026-05-13",
+  "equations": [
+    { "left": "fox", "operator": "+", "right": "pineapple", "result": 15 },
+    { "left": "pineapple", "operator": "+", "right": "gem", "result": 10 },
+    { "left": "fox", "operator": "+", "right": "gem", "result": 7 }
+  ],
+  "target": "gem",
+  "answer": 1,
+  "explanation": "🦊=6, 🍍=9, 💎=1. From the equations: 6+9=15, 9+1=10 and 6+1=7",
+  "difficulty": "medium"
+}

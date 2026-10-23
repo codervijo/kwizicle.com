@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-20",
+  "equations": [
+    { "left": "unicorn", "operator": "×", "right": "car", "result": 27 },
+    { "left": "car", "operator": "+", "right": "lion", "result": 9 },
+    { "left": "unicorn", "operator": "-", "right": "lion", "result": 3 }
+  ],
+  "target": "car",
+  "answer": 3,
+  "explanation": "🦄=9, 🚗=3, 🦁=6. From the equations: 9×3=27, 3+6=9 and 9-6=3",
+  "difficulty": "hard"
+}

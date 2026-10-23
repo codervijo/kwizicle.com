@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-18",
+  "equations": [
+    { "left": "pineapple", "operator": "×", "right": "balloon", "result": 32 },
+    { "left": "balloon", "operator": "-", "right": "pineapple", "result": 4 }
+  ],
+  "target": "pineapple",
+  "answer": 4,
+  "explanation": "🍍=4, 🎈=8. From the equations: 4×8=32 and 8-4=4",
+  "difficulty": "medium"
+}

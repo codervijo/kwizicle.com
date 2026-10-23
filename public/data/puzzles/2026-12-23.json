@@ -1,0 +1,11 @@
+{
+  "date": "2026-12-23",
+  "equations": [
+    { "left": "donut", "operator": "×", "right": "car", "result": 24 },
+    { "left": "donut", "operator": "-", "right": "car", "result": 2 }
+  ],
+  "target": "donut",
+  "answer": 6,
+  "explanation": "🍩=6, 🚗=4. From the equations: 6×4=24 and 6-4=2",
+  "difficulty": "medium"
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-24",
+  "equations": [
+    { "left": "penguin", "operator": "+", "right": "avocado", "result": 6 },
+    { "left": "avocado", "operator": "-", "right": "penguin", "result": 2 }
+  ],
+  "target": "penguin",
+  "answer": 2,
+  "explanation": "🐧=2, 🥑=4. From the equations: 2+4=6 and 4-2=2",
+  "difficulty": "easy"
+}

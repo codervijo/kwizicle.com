@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-14",
+  "equations": [
+    { "left": "lion", "operator": "+", "right": "cherries", "result": 7 },
+    { "left": "cherries", "operator": "+", "right": "monkey", "result": 14 },
+    { "left": "lion", "operator": "+", "right": "monkey", "result": 9 }
+  ],
+  "target": "cherries",
+  "answer": 6,
+  "explanation": "🦁=1, 🍒=6, 🐵=8. From the equations: 1+6=7, 6+8=14 and 1+8=9",
+  "difficulty": "medium"
+}

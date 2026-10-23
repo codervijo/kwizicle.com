@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-22",
+  "equations": [
+    { "left": "bell", "operator": "+", "right": "basketball", "result": 14 },
+    { "left": "basketball", "operator": "-", "right": "bell", "result": 2 }
+  ],
+  "target": "basketball",
+  "answer": 8,
+  "explanation": "🔔=6, 🏀=8. From the equations: 6+8=14 and 8-6=2",
+  "difficulty": "easy"
+}

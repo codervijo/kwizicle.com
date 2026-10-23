@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-30",
+  "equations": [
+    { "left": "donut", "operator": "+", "right": "frog", "result": 9 },
+    { "left": "frog", "operator": "-", "right": "donut", "result": 5 }
+  ],
+  "target": "donut",
+  "answer": 2,
+  "explanation": "🍩=2, 🐸=7. From the equations: 2+7=9 and 7-2=5",
+  "difficulty": "easy"
+}

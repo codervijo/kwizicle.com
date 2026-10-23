@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-09",
+  "equations": [
+    { "left": "soccer", "operator": "+", "right": "bell", "result": 6 },
+    { "left": "bell", "operator": "+", "right": "cactus", "result": 10 },
+    { "left": "soccer", "operator": "+", "right": "cactus", "result": 12 }
+  ],
+  "target": "cactus",
+  "answer": 8,
+  "explanation": "⚽=4, 🔔=2, 🌵=8. From the equations: 4+2=6, 2+8=10 and 4+8=12",
+  "difficulty": "medium"
+}

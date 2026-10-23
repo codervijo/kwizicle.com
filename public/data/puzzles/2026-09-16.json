@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-16",
+  "equations": [
+    { "left": "turtle", "operator": "×", "right": "lemon", "result": 20 },
+    { "left": "lemon", "operator": "-", "right": "turtle", "result": 1 }
+  ],
+  "target": "turtle",
+  "answer": 4,
+  "explanation": "🐢=4, 🍋=5. From the equations: 4×5=20 and 5-4=1",
+  "difficulty": "medium"
+}

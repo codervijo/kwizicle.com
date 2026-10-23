@@ -1,0 +1,12 @@
+{
+  "date": "2026-12-30",
+  "equations": [
+    { "left": "grapes", "operator": "+", "right": "bell", "result": 9 },
+    { "left": "bell", "operator": "+", "right": "ice_cream", "result": 16 },
+    { "left": "grapes", "operator": "+", "right": "ice_cream", "result": 11 }
+  ],
+  "target": "bell",
+  "answer": 7,
+  "explanation": "🍇=2, 🔔=7, 🍦=9. From the equations: 2+7=9, 7+9=16 and 2+9=11",
+  "difficulty": "medium"
+}

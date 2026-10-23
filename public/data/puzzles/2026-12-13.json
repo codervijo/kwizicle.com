@@ -1,0 +1,11 @@
+{
+  "date": "2026-12-13",
+  "equations": [
+    { "left": "avocado", "operator": "+", "right": "bee", "result": 6 },
+    { "left": "bee", "operator": "-", "right": "avocado", "result": 2 }
+  ],
+  "target": "bee",
+  "answer": 4,
+  "explanation": "🥑=2, 🐝=4. From the equations: 2+4=6 and 4-2=2",
+  "difficulty": "easy"
+}

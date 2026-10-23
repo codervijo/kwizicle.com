@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-13",
+  "equations": [
+    { "left": "cake", "operator": "×", "right": "taco", "result": 12 },
+    { "left": "cake", "operator": "-", "right": "taco", "result": 4 }
+  ],
+  "target": "taco",
+  "answer": 2,
+  "explanation": "🍰=6, 🌮=2. From the equations: 6×2=12 and 6-2=4",
+  "difficulty": "medium"
+}

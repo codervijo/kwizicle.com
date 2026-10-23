@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-21",
+  "equations": [
+    { "left": "cactus", "operator": "×", "right": "turtle", "result": 32 },
+    { "left": "cactus", "operator": "-", "right": "turtle", "result": 4 }
+  ],
+  "target": "cactus",
+  "answer": 8,
+  "explanation": "🌵=8, 🐢=4. From the equations: 8×4=32 and 8-4=4",
+  "difficulty": "medium"
+}

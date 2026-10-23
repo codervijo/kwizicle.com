@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-08",
+  "equations": [
+    { "left": "lion", "operator": "×", "right": "apple", "result": 36 },
+    { "left": "apple", "operator": "+", "right": "crown", "result": 6 },
+    { "left": "lion", "operator": "-", "right": "crown", "result": 7 }
+  ],
+  "target": "lion",
+  "answer": 9,
+  "explanation": "🦁=9, 🍎=4, 👑=2. From the equations: 9×4=36, 4+2=6 and 9-2=7",
+  "difficulty": "hard"
+}

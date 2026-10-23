@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-07",
+  "equations": [
+    { "left": "trophy", "operator": "+", "right": "banana", "result": 11 },
+    { "left": "trophy", "operator": "-", "right": "banana", "result": 1 }
+  ],
+  "target": "trophy",
+  "answer": 6,
+  "explanation": "🏆=6, 🍌=5. From the equations: 6+5=11 and 6-5=1",
+  "difficulty": "easy"
+}

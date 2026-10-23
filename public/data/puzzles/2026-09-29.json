@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-29",
+  "equations": [
+    { "left": "donut", "operator": "+", "right": "cherries", "result": 13 },
+    { "left": "cherries", "operator": "-", "right": "donut", "result": 1 }
+  ],
+  "target": "cherries",
+  "answer": 7,
+  "explanation": "🍩=6, 🍒=7. From the equations: 6+7=13 and 7-6=1",
+  "difficulty": "easy"
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-24",
+  "equations": [
+    { "left": "basketball", "operator": "+", "right": "pineapple", "result": 7 },
+    { "left": "pineapple", "operator": "×", "right": "watermelon", "result": 28 },
+    { "left": "watermelon", "operator": "-", "right": "basketball", "result": 4 }
+  ],
+  "target": "pineapple",
+  "answer": 4,
+  "explanation": "🏀=3, 🍍=4, 🍉=7. From the equations: 3+4=7, 4×7=28 and 7-3=4",
+  "difficulty": "hard"
+}

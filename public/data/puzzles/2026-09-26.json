@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-26",
+  "equations": [
+    { "left": "grapes", "operator": "+", "right": "fox", "result": 7 },
+    { "left": "fox", "operator": "×", "right": "bee", "result": 27 },
+    { "left": "bee", "operator": "-", "right": "grapes", "result": 5 }
+  ],
+  "target": "fox",
+  "answer": 3,
+  "explanation": "🍇=4, 🦊=3, 🐝=9. From the equations: 4+3=7, 3×9=27 and 9-4=5",
+  "difficulty": "hard"
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-25",
+  "equations": [
+    { "left": "rabbit", "operator": "+", "right": "frog", "result": 10 },
+    { "left": "frog", "operator": "-", "right": "rabbit", "result": 6 }
+  ],
+  "target": "frog",
+  "answer": 8,
+  "explanation": "🐰=2, 🐸=8. From the equations: 2+8=10 and 8-2=6",
+  "difficulty": "easy"
+}

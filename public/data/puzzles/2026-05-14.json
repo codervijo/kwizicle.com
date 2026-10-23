@@ -1,0 +1,12 @@
+{
+  "date": "2026-05-14",
+  "equations": [
+    { "left": "avocado", "operator": "+", "right": "grapes", "result": 7 },
+    { "left": "grapes", "operator": "+", "right": "gift", "result": 13 },
+    { "left": "avocado", "operator": "+", "right": "gift", "result": 12 }
+  ],
+  "target": "gift",
+  "answer": 9,
+  "explanation": "🥑=3, 🍇=4, 🎁=9. From the equations: 3+4=7, 4+9=13 and 3+9=12",
+  "difficulty": "medium"
+}

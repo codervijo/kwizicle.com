@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-25",
+  "equations": [
+    { "left": "bike", "operator": "+", "right": "bell", "result": 7 },
+    { "left": "bike", "operator": "-", "right": "bell", "result": 3 }
+  ],
+  "target": "bell",
+  "answer": 2,
+  "explanation": "🚲=5, 🔔=2. From the equations: 5+2=7 and 5-2=3",
+  "difficulty": "easy"
+}

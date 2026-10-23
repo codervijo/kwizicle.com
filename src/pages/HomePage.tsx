@@ -145,6 +145,9 @@ export default function HomePage() {
           >
             Emoji puzzles with answers &rarr;
           </Link>
+          <Link to="/archive" className="text-primary underline">
+            Past daily puzzles &amp; answers &rarr;
+          </Link>
         </nav>
       </section>
     </>

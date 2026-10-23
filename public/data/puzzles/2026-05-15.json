@@ -1,0 +1,12 @@
+{
+  "date": "2026-05-15",
+  "equations": [
+    { "left": "lemon", "operator": "+", "right": "monkey", "result": 7 },
+    { "left": "monkey", "operator": "×", "right": "owl", "result": 40 },
+    { "left": "owl", "operator": "-", "right": "lemon", "result": 6 }
+  ],
+  "target": "monkey",
+  "answer": 5,
+  "explanation": "🍋=2, 🐵=5, 🦉=8. From the equations: 2+5=7, 5×8=40 and 8-2=6",
+  "difficulty": "hard"
+}

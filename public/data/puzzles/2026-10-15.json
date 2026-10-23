@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-15",
+  "equations": [
+    { "left": "soccer", "operator": "×", "right": "crown", "result": 36 },
+    { "left": "crown", "operator": "-", "right": "soccer", "result": 5 }
+  ],
+  "target": "crown",
+  "answer": 9,
+  "explanation": "⚽=4, 👑=9. From the equations: 4×9=36 and 9-4=5",
+  "difficulty": "medium"
+}

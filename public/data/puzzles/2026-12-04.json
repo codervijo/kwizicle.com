@@ -1,0 +1,12 @@
+{
+  "date": "2026-12-04",
+  "equations": [
+    { "left": "crown", "operator": "×", "right": "frog", "result": 36 },
+    { "left": "frog", "operator": "+", "right": "turtle", "result": 9 },
+    { "left": "crown", "operator": "-", "right": "turtle", "result": 4 }
+  ],
+  "target": "turtle",
+  "answer": 5,
+  "explanation": "👑=9, 🐸=4, 🐢=5. From the equations: 9×4=36, 4+5=9 and 9-5=4",
+  "difficulty": "hard"
+}

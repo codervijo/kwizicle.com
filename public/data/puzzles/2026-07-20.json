@@ -1,0 +1,11 @@
+{
+  "date": "2026-07-20",
+  "equations": [
+    { "left": "penguin", "operator": "+", "right": "frog", "result": 11 },
+    { "left": "penguin", "operator": "-", "right": "frog", "result": 5 }
+  ],
+  "target": "frog",
+  "answer": 3,
+  "explanation": "🐧=8, 🐸=3. From the equations: 8+3=11 and 8-3=5",
+  "difficulty": "easy"
+}

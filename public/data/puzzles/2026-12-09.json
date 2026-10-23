@@ -1,0 +1,12 @@
+{
+  "date": "2026-12-09",
+  "equations": [
+    { "left": "crown", "operator": "+", "right": "cherries", "result": 11 },
+    { "left": "cherries", "operator": "+", "right": "avocado", "result": 7 },
+    { "left": "crown", "operator": "+", "right": "avocado", "result": 10 }
+  ],
+  "target": "avocado",
+  "answer": 3,
+  "explanation": "👑=7, 🍒=4, 🥑=3. From the equations: 7+4=11, 4+3=7 and 7+3=10",
+  "difficulty": "medium"
+}

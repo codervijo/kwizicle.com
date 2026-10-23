@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-21",
+  "equations": [
+    { "left": "bike", "operator": "+", "right": "donut", "result": 5 },
+    { "left": "donut", "operator": "×", "right": "bell", "result": 24 },
+    { "left": "bell", "operator": "-", "right": "bike", "result": 6 }
+  ],
+  "target": "bell",
+  "answer": 8,
+  "explanation": "🚲=2, 🍩=3, 🔔=8. From the equations: 2+3=5, 3×8=24 and 8-2=6",
+  "difficulty": "hard"
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-12-21",
+  "equations": [
+    { "left": "unicorn", "operator": "+", "right": "mushroom", "result": 10 },
+    { "left": "mushroom", "operator": "-", "right": "unicorn", "result": 4 }
+  ],
+  "target": "mushroom",
+  "answer": 7,
+  "explanation": "🦄=3, 🍄=7. From the equations: 3+7=10 and 7-3=4",
+  "difficulty": "easy"
+}

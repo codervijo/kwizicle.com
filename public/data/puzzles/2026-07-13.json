@@ -1,0 +1,11 @@
+{
+  "date": "2026-07-13",
+  "equations": [
+    { "left": "lion", "operator": "+", "right": "ice_cream", "result": 7 },
+    { "left": "ice_cream", "operator": "-", "right": "lion", "result": 1 }
+  ],
+  "target": "ice_cream",
+  "answer": 4,
+  "explanation": "🦁=3, 🍦=4. From the equations: 3+4=7 and 4-3=1",
+  "difficulty": "easy"
+}

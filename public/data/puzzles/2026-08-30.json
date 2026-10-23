@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-30",
+  "equations": [
+    { "left": "turtle", "operator": "+", "right": "monkey", "result": 11 },
+    { "left": "turtle", "operator": "-", "right": "monkey", "result": 7 }
+  ],
+  "target": "monkey",
+  "answer": 2,
+  "explanation": "🐢=9, 🐵=2. From the equations: 9+2=11 and 9-2=7",
+  "difficulty": "easy"
+}

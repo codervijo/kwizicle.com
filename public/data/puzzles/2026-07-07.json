@@ -1,0 +1,11 @@
+{
+  "date": "2026-07-07",
+  "equations": [
+    { "left": "corn", "operator": "+", "right": "bee", "result": 13 },
+    { "left": "corn", "operator": "-", "right": "bee", "result": 5 }
+  ],
+  "target": "corn",
+  "answer": 9,
+  "explanation": "🌽=9, 🐝=4. From the equations: 9+4=13 and 9-4=5",
+  "difficulty": "easy"
+}

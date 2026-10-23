@@ -1,10 +1,10 @@
 ---
 project: kwizicle.com
 prd_version: 2
-project_version: v0.A
-status: planning v0.B
+project_version: v0.E
+status: v0.D + v0.E built, uncommitted
 owner: Vijo
-last_updated: 2026-05-04
+last_updated: 2026-10-23
 ---
 
 # kwizicle.com — PRD
@@ -45,10 +45,12 @@ last_updated: 2026-05-04
 | Phase | Theme | Features |
 |---|---|---|
 | **v0.A** *(done)* | scaffold + deploy | Vite/CF Pages, game UI, stats, hard-coded fallback puzzles, theme toggle, share text |
-| **v0.B** | switching seams + seed bank | `assets.ts` registry · `<AssetGlyph>` component · render-mode flag (emoji default, PNG branch wired) · `abstractVars.ts` (temporary `a→kiwi` map) · loader normalizes asset-name and emoji-baked schemas · import 5 kwizpy JSONs (`kwiz1`–`kwiz5`) into `public/data/puzzles/` · trim hard-coded fallbacks to one safety-net |
-| **v0.C** | next-kwiz mode | `public/data/extras/manifest.json` · `extras.ts` loader + solved-set tracker · post-game "Play another" CTA · separate counter on Stats page · streak untouched by extras |
+| **v0.B** *(built)* | switching seams + seed bank | `assets.ts` registry · `<AssetGlyph>` component · render-mode flag (emoji default, PNG branch wired) · `abstractVars.ts` (temporary `a→kiwi` map) · loader normalizes asset-name and emoji-baked schemas · import 5 kwizpy JSONs (`kwiz1`–`kwiz5`) into `public/data/puzzles/` · trim hard-coded fallbacks to one safety-net |
+| **v0.C** *(built)* | next-kwiz mode | `public/data/extras/manifest.json` · `extras.ts` loader + solved-set tracker · post-game "Play another" CTA · separate counter on Stats page · streak untouched by extras |
+| **v0.D** *(built)* | daily content through 2026-12-31 | Claude-authored (generator kept outside the repo; output committed as data) — 237 dated puzzles in the existing v3 asset-name schema: **backfill** 2026-05-09 → 2026-10-22 (167) + **forward-fill** 2026-10-23 → 2026-12-31 (70) into `public/data/puzzles/` · batch validator (unique solution, integer answer = `answer`, `target` appears in equations, every asset name in `assets.ts`, no back-to-back repeats of an asset pair) · difficulty mix across the week · no puzzle reuses the safety-net or SEO-page examples (🥝/🥕, 🍔/🐶, the blog's six) · end-of-data alert so the daily never silently falls back again · expand `assets.ts` vocabulary so 237 days don't cycle 10 glyphs |
+| **v0.E** *(built)* | wake archive routes | Prerender `/archive` + `/answer/:date` for every past date (build-date cutoff; today/future never prerendered or revealed) · per-date title/meta/canonical · answer page = equations + answer + worked explanation + prev/next + "play it" link · `/puzzle/:date` playable via `<PuzzleGame>` with session-only state (never touches streak/stats), client-only, not in sitemap · sitemap generated at build from puzzle data (replaces static `public/sitemap.xml`) · archive linked from homepage |
 | **v1.A** | adopt kwizpy | Coordinate sibling repo to emit our schema (asset names + `target` + `result` + `difficulty`) · drop `abstractVars.ts` once kwizpy emits asset names directly · scheduled bulk publish |
-| **v1.B** | pipeline polish | Solvability validator · difficulty curve · year of puzzles pre-published · automation/cron for daily emit |
+| **v1.B** | pipeline polish | Solvability validator · difficulty curve · 2027+ puzzles pre-published · automation/cron for daily emit |
 | **v2.x** | TBD | — |
 
 ## 6. Open questions
@@ -60,6 +62,8 @@ last_updated: 2026-05-04
 - **2026-05-04** — Asset registry shared between web and mobile, or per-app? *(default: per-app, extract later if needed)*
 - **2026-05-04** — kwizpy schema-change (emit `vars: {a: "kiwi"}`) — owned by Vijo or coordinated when v1.A starts? *(unanswered)*
 - **2026-05-04** — Palette audit: cross-platform-test the existing 7 fallback puzzles, or pick a fresh themed safe-list of ~20? *(decided: either; deferred until needed)*
+- **2026-10-23** — v0.D puzzle source: kwizpy only renders PNGs from hand-written specs, it doesn't generate. Who authors the 237 — a generator script, extend kwizpy now (pulls v1.A forward), or author by hand/Claude + validator? *(answered 2026-10-23: Claude-authored + validator)*
+- **2026-10-23** — Once v0.D fills the past dates, wake the dormant `/archive` + `/answer/:date` routes as indexable content? Their TODO gate is "populated, real artifacts" — v0.D satisfies the populated half. *(answered 2026-10-23: yes → v0.E)*
 
 ## 7. Switching seams
 

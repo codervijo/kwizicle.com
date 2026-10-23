@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-02",
+  "equations": [
+    { "left": "cookie", "operator": "+", "right": "gift", "result": 10 },
+    { "left": "gift", "operator": "-", "right": "cookie", "result": 8 }
+  ],
+  "target": "cookie",
+  "answer": 1,
+  "explanation": "🍪=1, 🎁=9. From the equations: 1+9=10 and 9-1=8",
+  "difficulty": "easy"
+}

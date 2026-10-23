@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-12",
+  "equations": [
+    { "left": "panda", "operator": "+", "right": "frog", "result": 16 },
+    { "left": "panda", "operator": "-", "right": "frog", "result": 2 }
+  ],
+  "target": "panda",
+  "answer": 9,
+  "explanation": "🐼=9, 🐸=7. From the equations: 9+7=16 and 9-7=2",
+  "difficulty": "easy"
+}

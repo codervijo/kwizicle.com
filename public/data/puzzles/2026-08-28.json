@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-28",
+  "equations": [
+    { "left": "bell", "operator": "+", "right": "mushroom", "result": 5 },
+    { "left": "mushroom", "operator": "×", "right": "corn", "result": 16 },
+    { "left": "corn", "operator": "-", "right": "bell", "result": 5 }
+  ],
+  "target": "corn",
+  "answer": 8,
+  "explanation": "🔔=3, 🍄=2, 🌽=8. From the equations: 3+2=5, 2×8=16 and 8-3=5",
+  "difficulty": "hard"
+}

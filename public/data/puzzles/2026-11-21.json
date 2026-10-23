@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-21",
+  "equations": [
+    { "left": "penguin", "operator": "×", "right": "donut", "result": 18 },
+    { "left": "donut", "operator": "+", "right": "ice_cream", "result": 8 },
+    { "left": "penguin", "operator": "-", "right": "ice_cream", "result": 3 }
+  ],
+  "target": "penguin",
+  "answer": 9,
+  "explanation": "🐧=9, 🍩=2, 🍦=6. From the equations: 9×2=18, 2+6=8 and 9-6=3",
+  "difficulty": "hard"
+}

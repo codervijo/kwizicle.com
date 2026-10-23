@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-08",
+  "equations": [
+    { "left": "lemon", "operator": "+", "right": "trophy", "result": 10 },
+    { "left": "trophy", "operator": "-", "right": "lemon", "result": 6 }
+  ],
+  "target": "lemon",
+  "answer": 2,
+  "explanation": "🍋=2, 🏆=8. From the equations: 2+8=10 and 8-2=6",
+  "difficulty": "easy"
+}

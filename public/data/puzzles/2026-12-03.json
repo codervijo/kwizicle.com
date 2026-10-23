@@ -1,0 +1,12 @@
+{
+  "date": "2026-12-03",
+  "equations": [
+    { "left": "cookie", "operator": "+", "right": "cherries", "result": 9 },
+    { "left": "cherries", "operator": "+", "right": "watermelon", "result": 15 },
+    { "left": "cookie", "operator": "+", "right": "watermelon", "result": 10 }
+  ],
+  "target": "cookie",
+  "answer": 2,
+  "explanation": "🍪=2, 🍒=7, 🍉=8. From the equations: 2+7=9, 7+8=15 and 2+8=10",
+  "difficulty": "medium"
+}

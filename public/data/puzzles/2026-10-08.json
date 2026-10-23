@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-08",
+  "equations": [
+    { "left": "crown", "operator": "×", "right": "avocado", "result": 40 },
+    { "left": "avocado", "operator": "-", "right": "crown", "result": 3 }
+  ],
+  "target": "avocado",
+  "answer": 8,
+  "explanation": "👑=5, 🥑=8. From the equations: 5×8=40 and 8-5=3",
+  "difficulty": "medium"
+}

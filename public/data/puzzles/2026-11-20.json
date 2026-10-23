@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-20",
+  "equations": [
+    { "left": "bike", "operator": "×", "right": "lion", "result": 18 },
+    { "left": "lion", "operator": "+", "right": "cactus", "result": 6 },
+    { "left": "bike", "operator": "-", "right": "cactus", "result": 5 }
+  ],
+  "target": "bike",
+  "answer": 9,
+  "explanation": "🚲=9, 🦁=2, 🌵=4. From the equations: 9×2=18, 2+4=6 and 9-4=5",
+  "difficulty": "hard"
+}

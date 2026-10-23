@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-05",
+  "equations": [
+    { "left": "frog", "operator": "+", "right": "car", "result": 11 },
+    { "left": "car", "operator": "-", "right": "frog", "result": 7 }
+  ],
+  "target": "frog",
+  "answer": 2,
+  "explanation": "🐸=2, 🚗=9. From the equations: 2+9=11 and 9-2=7",
+  "difficulty": "easy"
+}

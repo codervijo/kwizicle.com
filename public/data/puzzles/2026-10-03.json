@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-03",
+  "equations": [
+    { "left": "soccer", "operator": "+", "right": "bell", "result": 8 },
+    { "left": "bell", "operator": "×", "right": "monkey", "result": 45 },
+    { "left": "monkey", "operator": "-", "right": "soccer", "result": 6 }
+  ],
+  "target": "bell",
+  "answer": 5,
+  "explanation": "⚽=3, 🔔=5, 🐵=9. From the equations: 3+5=8, 5×9=45 and 9-3=6",
+  "difficulty": "hard"
+}

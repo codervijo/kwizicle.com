@@ -1,0 +1,12 @@
+{
+  "date": "2026-05-29",
+  "equations": [
+    { "left": "bike", "operator": "×", "right": "owl", "result": 16 },
+    { "left": "owl", "operator": "+", "right": "frog", "result": 7 },
+    { "left": "bike", "operator": "-", "right": "frog", "result": 3 }
+  ],
+  "target": "owl",
+  "answer": 2,
+  "explanation": "🚲=8, 🦉=2, 🐸=5. From the equations: 8×2=16, 2+5=7 and 8-5=3",
+  "difficulty": "hard"
+}

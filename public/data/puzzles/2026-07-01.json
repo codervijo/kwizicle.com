@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-01",
+  "equations": [
+    { "left": "frog", "operator": "+", "right": "grapes", "result": 14 },
+    { "left": "grapes", "operator": "+", "right": "bell", "result": 13 },
+    { "left": "frog", "operator": "+", "right": "bell", "result": 17 }
+  ],
+  "target": "frog",
+  "answer": 9,
+  "explanation": "🐸=9, 🍇=5, 🔔=8. From the equations: 9+5=14, 5+8=13 and 9+8=17",
+  "difficulty": "medium"
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-17",
+  "equations": [
+    { "left": "corn", "operator": "+", "right": "penguin", "result": 17 },
+    { "left": "penguin", "operator": "-", "right": "corn", "result": 1 }
+  ],
+  "target": "penguin",
+  "answer": 9,
+  "explanation": "🌽=8, 🐧=9. From the equations: 8+9=17 and 9-8=1",
+  "difficulty": "easy"
+}

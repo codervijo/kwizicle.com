@@ -1,0 +1,12 @@
+{
+  "date": "2026-12-11",
+  "equations": [
+    { "left": "car", "operator": "+", "right": "pineapple", "result": 9 },
+    { "left": "pineapple", "operator": "×", "right": "bike", "result": 63 },
+    { "left": "bike", "operator": "-", "right": "car", "result": 7 }
+  ],
+  "target": "car",
+  "answer": 2,
+  "explanation": "🚗=2, 🍍=7, 🚲=9. From the equations: 2+7=9, 7×9=63 and 9-2=7",
+  "difficulty": "hard"
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-14",
+  "equations": [
+    { "left": "fox", "operator": "+", "right": "watermelon", "result": 11 },
+    { "left": "fox", "operator": "-", "right": "watermelon", "result": 3 }
+  ],
+  "target": "fox",
+  "answer": 7,
+  "explanation": "🦊=7, 🍉=4. From the equations: 7+4=11 and 7-4=3",
+  "difficulty": "easy"
+}

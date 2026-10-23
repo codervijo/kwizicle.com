@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-06",
+  "equations": [
+    { "left": "cactus", "operator": "+", "right": "unicorn", "result": 12 },
+    { "left": "unicorn", "operator": "-", "right": "cactus", "result": 4 }
+  ],
+  "target": "unicorn",
+  "answer": 8,
+  "explanation": "🌵=4, 🦄=8. From the equations: 4+8=12 and 8-4=4",
+  "difficulty": "easy"
+}

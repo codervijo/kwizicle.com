@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-25",
+  "equations": [
+    { "left": "strawberry", "operator": "×", "right": "trophy", "result": 15 },
+    { "left": "strawberry", "operator": "-", "right": "trophy", "result": 2 }
+  ],
+  "target": "strawberry",
+  "answer": 5,
+  "explanation": "🍓=5, 🏆=3. From the equations: 5×3=15 and 5-3=2",
+  "difficulty": "medium"
+}

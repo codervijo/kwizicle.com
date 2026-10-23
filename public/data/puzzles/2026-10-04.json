@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-04",
+  "equations": [
+    { "left": "cherries", "operator": "+", "right": "panda", "result": 5 },
+    { "left": "panda", "operator": "-", "right": "cherries", "result": 1 }
+  ],
+  "target": "cherries",
+  "answer": 2,
+  "explanation": "🍒=2, 🐼=3. From the equations: 2+3=5 and 3-2=1",
+  "difficulty": "easy"
+}

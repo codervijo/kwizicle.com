@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-18",
+  "equations": [
+    { "left": "owl", "operator": "×", "right": "rocket", "result": 42 },
+    { "left": "rocket", "operator": "-", "right": "owl", "result": 1 }
+  ],
+  "target": "owl",
+  "answer": 6,
+  "explanation": "🦉=6, 🚀=7. From the equations: 6×7=42 and 7-6=1",
+  "difficulty": "medium"
+}

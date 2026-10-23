@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-25",
+  "equations": [
+    { "left": "car", "operator": "+", "right": "penguin", "result": 6 },
+    { "left": "penguin", "operator": "×", "right": "panda", "result": 16 },
+    { "left": "panda", "operator": "-", "right": "car", "result": 4 }
+  ],
+  "target": "panda",
+  "answer": 8,
+  "explanation": "🚗=4, 🐧=2, 🐼=8. From the equations: 4+2=6, 2×8=16 and 8-4=4",
+  "difficulty": "hard"
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-01",
+  "equations": [
+    { "left": "lion", "operator": "×", "right": "penguin", "result": 18 },
+    { "left": "penguin", "operator": "+", "right": "donut", "result": 6 },
+    { "left": "lion", "operator": "-", "right": "donut", "result": 5 }
+  ],
+  "target": "penguin",
+  "answer": 2,
+  "explanation": "🦁=9, 🐧=2, 🍩=4. From the equations: 9×2=18, 2+4=6 and 9-4=5",
+  "difficulty": "hard"
+}

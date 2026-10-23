@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-04",
+  "equations": [
+    { "left": "trophy", "operator": "×", "right": "avocado", "result": 32 },
+    { "left": "avocado", "operator": "+", "right": "gem", "result": 7 },
+    { "left": "trophy", "operator": "-", "right": "gem", "result": 5 }
+  ],
+  "target": "gem",
+  "answer": 3,
+  "explanation": "🏆=8, 🥑=4, 💎=3. From the equations: 8×4=32, 4+3=7 and 8-3=5",
+  "difficulty": "hard"
+}

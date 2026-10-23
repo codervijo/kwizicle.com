@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-09",
+  "equations": [
+    { "left": "donut", "operator": "+", "right": "banana", "result": 12 },
+    { "left": "banana", "operator": "-", "right": "donut", "result": 6 }
+  ],
+  "target": "donut",
+  "answer": 3,
+  "explanation": "🍩=3, 🍌=9. From the equations: 3+9=12 and 9-3=6",
+  "difficulty": "easy"
+}

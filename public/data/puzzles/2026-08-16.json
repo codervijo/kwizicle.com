@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-16",
+  "equations": [
+    { "left": "mushroom", "operator": "+", "right": "penguin", "result": 12 },
+    { "left": "penguin", "operator": "-", "right": "mushroom", "result": 6 }
+  ],
+  "target": "mushroom",
+  "answer": 3,
+  "explanation": "🍄=3, 🐧=9. From the equations: 3+9=12 and 9-3=6",
+  "difficulty": "easy"
+}

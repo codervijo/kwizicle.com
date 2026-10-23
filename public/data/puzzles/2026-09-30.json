@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-30",
+  "equations": [
+    { "left": "lemon", "operator": "+", "right": "corn", "result": 12 },
+    { "left": "corn", "operator": "+", "right": "soccer", "result": 16 },
+    { "left": "lemon", "operator": "+", "right": "soccer", "result": 14 }
+  ],
+  "target": "lemon",
+  "answer": 5,
+  "explanation": "🍋=5, 🌽=7, ⚽=9. From the equations: 5+7=12, 7+9=16 and 5+9=14",
+  "difficulty": "medium"
+}

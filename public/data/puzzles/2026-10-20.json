@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-20",
+  "equations": [
+    { "left": "lion", "operator": "+", "right": "octopus", "result": 9 },
+    { "left": "lion", "operator": "-", "right": "octopus", "result": 5 }
+  ],
+  "target": "octopus",
+  "answer": 2,
+  "explanation": "🦁=7, 🐙=2. From the equations: 7+2=9 and 7-2=5",
+  "difficulty": "easy"
+}

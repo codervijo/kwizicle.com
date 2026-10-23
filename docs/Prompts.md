@@ -192,3 +192,22 @@ commit.
   attribution is unknowable; homepage entry extended to 2026-11-20.
 - Found: `public/data/puzzles/` ends 2026-05-08 — every day since has served
   the same safety-net puzzle.
+
+## 2026-10-23 — v0.D daily content through year-end + v0.E archive routes
+
+> Fill the missing puzzle dates and build content for the rest of the year;
+> add it to the PRD (push the rest down). Then: Claude authors the puzzles,
+> and wake the dormant archive routes.
+
+- PRD: added v0.D (content) + v0.E (archive) ahead of v1; marked v0.B/v0.C
+  built; answered the two 2026-10-23 open questions.
+- v0.D: 237 puzzles (2026-05-09 → 2026-12-31) from a deterministic generator
+  kept outside the repo; 40 new emoji in `assets.ts` (new puzzles avoid the
+  10 SEO/seed glyphs); weekday difficulty curve; `src/test/puzzles.test.ts`
+  validates uniqueness/answers/calendar and fails <14 days before data ends.
+- v0.E: `/archive` + `/answer/:date` prerendered for days over in every
+  timezone (D+1 12:00 UTC); `/puzzle/:date` session-only replay; sitemap now
+  generated at build from puzzle data (static `public/sitemap.xml` removed).
+- Gotchas: archive/sitemap only advance on rebuild (daily CF rebuild not set
+  up). Client-only routes log React #418 on load — pre-existing (SPA fallback
+  serves homepage HTML), confirmed on a HEAD build.

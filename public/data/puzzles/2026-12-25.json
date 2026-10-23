@@ -1,0 +1,12 @@
+{
+  "date": "2026-12-25",
+  "equations": [
+    { "left": "bell", "operator": "×", "right": "lion", "result": 27 },
+    { "left": "lion", "operator": "+", "right": "watermelon", "result": 8 },
+    { "left": "bell", "operator": "-", "right": "watermelon", "result": 4 }
+  ],
+  "target": "bell",
+  "answer": 9,
+  "explanation": "🔔=9, 🦁=3, 🍉=5. From the equations: 9×3=27, 3+5=8 and 9-5=4",
+  "difficulty": "hard"
+}

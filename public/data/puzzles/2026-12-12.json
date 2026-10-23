@@ -1,0 +1,12 @@
+{
+  "date": "2026-12-12",
+  "equations": [
+    { "left": "soccer", "operator": "×", "right": "gem", "result": 24 },
+    { "left": "gem", "operator": "+", "right": "cookie", "result": 5 },
+    { "left": "soccer", "operator": "-", "right": "cookie", "result": 6 }
+  ],
+  "target": "soccer",
+  "answer": 8,
+  "explanation": "⚽=8, 💎=3, 🍪=2. From the equations: 8×3=24, 3+2=5 and 8-2=6",
+  "difficulty": "hard"
+}

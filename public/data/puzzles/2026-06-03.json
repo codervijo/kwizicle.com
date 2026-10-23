@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-03",
+  "equations": [
+    { "left": "turtle", "operator": "×", "right": "pineapple", "result": 14 },
+    { "left": "turtle", "operator": "-", "right": "pineapple", "result": 5 }
+  ],
+  "target": "turtle",
+  "answer": 7,
+  "explanation": "🐢=7, 🍍=2. From the equations: 7×2=14 and 7-2=5",
+  "difficulty": "medium"
+}

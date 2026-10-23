@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-07",
+  "equations": [
+    { "left": "avocado", "operator": "+", "right": "balloon", "result": 9 },
+    { "left": "balloon", "operator": "×", "right": "pineapple", "result": 27 },
+    { "left": "pineapple", "operator": "-", "right": "avocado", "result": 3 }
+  ],
+  "target": "avocado",
+  "answer": 6,
+  "explanation": "🥑=6, 🎈=3, 🍍=9. From the equations: 6+3=9, 3×9=27 and 9-6=3",
+  "difficulty": "hard"
+}

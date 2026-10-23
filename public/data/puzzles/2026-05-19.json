@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-19",
+  "equations": [
+    { "left": "rocket", "operator": "+", "right": "basketball", "result": 13 },
+    { "left": "rocket", "operator": "-", "right": "basketball", "result": 5 }
+  ],
+  "target": "basketball",
+  "answer": 4,
+  "explanation": "🚀=9, 🏀=4. From the equations: 9+4=13 and 9-4=5",
+  "difficulty": "easy"
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-26",
+  "equations": [
+    { "left": "strawberry", "operator": "+", "right": "soccer", "result": 7 },
+    { "left": "strawberry", "operator": "-", "right": "soccer", "result": 5 }
+  ],
+  "target": "strawberry",
+  "answer": 6,
+  "explanation": "🍓=6, ⚽=1. From the equations: 6+1=7 and 6-1=5",
+  "difficulty": "easy"
+}

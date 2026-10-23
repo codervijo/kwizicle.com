@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-29",
+  "equations": [
+    { "left": "bee", "operator": "+", "right": "apple", "result": 8 },
+    { "left": "bee", "operator": "-", "right": "apple", "result": 4 }
+  ],
+  "target": "bee",
+  "answer": 6,
+  "explanation": "🐝=6, 🍎=2. From the equations: 6+2=8 and 6-2=4",
+  "difficulty": "easy"
+}

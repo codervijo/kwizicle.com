@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-25",
+  "equations": [
+    { "left": "gift", "operator": "×", "right": "gem", "result": 24 },
+    { "left": "gem", "operator": "+", "right": "frog", "result": 6 },
+    { "left": "gift", "operator": "-", "right": "frog", "result": 4 }
+  ],
+  "target": "gift",
+  "answer": 6,
+  "explanation": "🎁=6, 💎=4, 🐸=2. From the equations: 6×4=24, 4+2=6 and 6-2=4",
+  "difficulty": "hard"
+}

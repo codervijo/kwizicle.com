@@ -1,0 +1,12 @@
+{
+  "date": "2026-12-10",
+  "equations": [
+    { "left": "trophy", "operator": "+", "right": "rocket", "result": 14 },
+    { "left": "rocket", "operator": "+", "right": "ice_cream", "result": 10 },
+    { "left": "trophy", "operator": "+", "right": "ice_cream", "result": 12 }
+  ],
+  "target": "rocket",
+  "answer": 6,
+  "explanation": "🏆=8, 🚀=6, 🍦=4. From the equations: 8+6=14, 6+4=10 and 8+4=12",
+  "difficulty": "medium"
+}

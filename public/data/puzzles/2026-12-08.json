@@ -1,0 +1,11 @@
+{
+  "date": "2026-12-08",
+  "equations": [
+    { "left": "octopus", "operator": "+", "right": "cookie", "result": 13 },
+    { "left": "cookie", "operator": "-", "right": "octopus", "result": 1 }
+  ],
+  "target": "octopus",
+  "answer": 6,
+  "explanation": "🐙=6, 🍪=7. From the equations: 6+7=13 and 7-6=1",
+  "difficulty": "easy"
+}

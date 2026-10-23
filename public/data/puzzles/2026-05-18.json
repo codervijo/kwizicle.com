@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-18",
+  "equations": [
+    { "left": "cherries", "operator": "+", "right": "lemon", "result": 11 },
+    { "left": "cherries", "operator": "-", "right": "lemon", "result": 5 }
+  ],
+  "target": "lemon",
+  "answer": 3,
+  "explanation": "🍒=8, 🍋=3. From the equations: 8+3=11 and 8-3=5",
+  "difficulty": "easy"
+}

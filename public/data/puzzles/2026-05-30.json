@@ -1,0 +1,12 @@
+{
+  "date": "2026-05-30",
+  "equations": [
+    { "left": "gem", "operator": "+", "right": "crown", "result": 7 },
+    { "left": "crown", "operator": "×", "right": "penguin", "result": 24 },
+    { "left": "penguin", "operator": "-", "right": "gem", "result": 4 }
+  ],
+  "target": "penguin",
+  "answer": 8,
+  "explanation": "💎=4, 👑=3, 🐧=8. From the equations: 4+3=7, 3×8=24 and 8-4=4",
+  "difficulty": "hard"
+}

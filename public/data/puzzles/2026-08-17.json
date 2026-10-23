@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-17",
+  "equations": [
+    { "left": "lemon", "operator": "+", "right": "balloon", "result": 7 },
+    { "left": "balloon", "operator": "-", "right": "lemon", "result": 1 }
+  ],
+  "target": "lemon",
+  "answer": 3,
+  "explanation": "🍋=3, 🎈=4. From the equations: 3+4=7 and 4-3=1",
+  "difficulty": "easy"
+}

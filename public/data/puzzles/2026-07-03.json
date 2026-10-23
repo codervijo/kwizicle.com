@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-03",
+  "equations": [
+    { "left": "monkey", "operator": "+", "right": "ice_cream", "result": 5 },
+    { "left": "ice_cream", "operator": "×", "right": "lemon", "result": 15 },
+    { "left": "lemon", "operator": "-", "right": "monkey", "result": 3 }
+  ],
+  "target": "monkey",
+  "answer": 2,
+  "explanation": "🐵=2, 🍦=3, 🍋=5. From the equations: 2+3=5, 3×5=15 and 5-2=3",
+  "difficulty": "hard"
+}

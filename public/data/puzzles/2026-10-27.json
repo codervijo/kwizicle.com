@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-27",
+  "equations": [
+    { "left": "donut", "operator": "+", "right": "avocado", "result": 6 },
+    { "left": "avocado", "operator": "-", "right": "donut", "result": 4 }
+  ],
+  "target": "avocado",
+  "answer": 5,
+  "explanation": "🍩=1, 🥑=5. From the equations: 1+5=6 and 5-1=4",
+  "difficulty": "easy"
+}

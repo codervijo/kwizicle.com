@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-20",
+  "equations": [
+    { "left": "avocado", "operator": "+", "right": "corn", "result": 7 },
+    { "left": "corn", "operator": "+", "right": "turtle", "result": 6 },
+    { "left": "avocado", "operator": "+", "right": "turtle", "result": 5 }
+  ],
+  "target": "corn",
+  "answer": 4,
+  "explanation": "🥑=3, 🌽=4, 🐢=2. From the equations: 3+4=7, 4+2=6 and 3+2=5",
+  "difficulty": "medium"
+}

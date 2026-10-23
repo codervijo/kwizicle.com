@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-27",
+  "equations": [
+    { "left": "monkey", "operator": "×", "right": "cookie", "result": 56 },
+    { "left": "cookie", "operator": "-", "right": "monkey", "result": 1 }
+  ],
+  "target": "monkey",
+  "answer": 7,
+  "explanation": "🐵=7, 🍪=8. From the equations: 7×8=56 and 8-7=1",
+  "difficulty": "medium"
+}

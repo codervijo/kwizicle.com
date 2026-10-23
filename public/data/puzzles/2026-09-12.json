@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-12",
+  "equations": [
+    { "left": "frog", "operator": "+", "right": "basketball", "result": 8 },
+    { "left": "basketball", "operator": "×", "right": "cake", "result": 16 },
+    { "left": "cake", "operator": "-", "right": "frog", "result": 2 }
+  ],
+  "target": "basketball",
+  "answer": 2,
+  "explanation": "🐸=6, 🏀=2, 🍰=8. From the equations: 6+2=8, 2×8=16 and 8-6=2",
+  "difficulty": "hard"
+}

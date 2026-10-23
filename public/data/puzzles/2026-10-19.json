@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-19",
+  "equations": [
+    { "left": "cake", "operator": "+", "right": "balloon", "result": 7 },
+    { "left": "cake", "operator": "-", "right": "balloon", "result": 5 }
+  ],
+  "target": "balloon",
+  "answer": 1,
+  "explanation": "🍰=6, 🎈=1. From the equations: 6+1=7 and 6-1=5",
+  "difficulty": "easy"
+}

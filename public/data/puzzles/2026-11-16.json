@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-16",
+  "equations": [
+    { "left": "gift", "operator": "+", "right": "lemon", "result": 8 },
+    { "left": "gift", "operator": "-", "right": "lemon", "result": 6 }
+  ],
+  "target": "gift",
+  "answer": 7,
+  "explanation": "🎁=7, 🍋=1. From the equations: 7+1=8 and 7-1=6",
+  "difficulty": "easy"
+}

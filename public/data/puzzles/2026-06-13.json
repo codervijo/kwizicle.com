@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-13",
+  "equations": [
+    { "left": "rocket", "operator": "×", "right": "octopus", "result": 18 },
+    { "left": "octopus", "operator": "+", "right": "watermelon", "result": 8 },
+    { "left": "rocket", "operator": "-", "right": "watermelon", "result": 3 }
+  ],
+  "target": "rocket",
+  "answer": 9,
+  "explanation": "🚀=9, 🐙=2, 🍉=6. From the equations: 9×2=18, 2+6=8 and 9-6=3",
+  "difficulty": "hard"
+}

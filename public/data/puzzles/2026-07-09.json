@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-09",
+  "equations": [
+    { "left": "monkey", "operator": "+", "right": "bike", "result": 9 },
+    { "left": "bike", "operator": "+", "right": "gem", "result": 7 },
+    { "left": "monkey", "operator": "+", "right": "gem", "result": 10 }
+  ],
+  "target": "monkey",
+  "answer": 6,
+  "explanation": "🐵=6, 🚲=3, 💎=4. From the equations: 6+3=9, 3+4=7 and 6+4=10",
+  "difficulty": "medium"
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-03",
+  "equations": [
+    { "left": "bike", "operator": "+", "right": "bee", "result": 11 },
+    { "left": "bike", "operator": "-", "right": "bee", "result": 7 }
+  ],
+  "target": "bike",
+  "answer": 9,
+  "explanation": "🚲=9, 🐝=2. From the equations: 9+2=11 and 9-2=7",
+  "difficulty": "easy"
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-30",
+  "equations": [
+    { "left": "penguin", "operator": "×", "right": "gem", "result": 32 },
+    { "left": "gem", "operator": "+", "right": "unicorn", "result": 6 },
+    { "left": "penguin", "operator": "-", "right": "unicorn", "result": 6 }
+  ],
+  "target": "gem",
+  "answer": 4,
+  "explanation": "🐧=8, 💎=4, 🦄=2. From the equations: 8×4=32, 4+2=6 and 8-2=6",
+  "difficulty": "hard"
+}

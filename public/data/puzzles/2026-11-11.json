@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-11",
+  "equations": [
+    { "left": "basketball", "operator": "×", "right": "gift", "result": 10 },
+    { "left": "basketball", "operator": "-", "right": "gift", "result": 3 }
+  ],
+  "target": "basketball",
+  "answer": 5,
+  "explanation": "🏀=5, 🎁=2. From the equations: 5×2=10 and 5-2=3",
+  "difficulty": "medium"
+}

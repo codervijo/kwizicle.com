@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-12",
+  "equations": [
+    { "left": "car", "operator": "+", "right": "grapes", "result": 7 },
+    { "left": "grapes", "operator": "+", "right": "corn", "result": 11 },
+    { "left": "car", "operator": "+", "right": "corn", "result": 14 }
+  ],
+  "target": "car",
+  "answer": 5,
+  "explanation": "🚗=5, 🍇=2, 🌽=9. From the equations: 5+2=7, 2+9=11 and 5+9=14",
+  "difficulty": "medium"
+}

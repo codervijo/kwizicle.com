@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-03",
+  "equations": [
+    { "left": "watermelon", "operator": "+", "right": "bee", "result": 3 },
+    { "left": "bee", "operator": "-", "right": "watermelon", "result": 1 }
+  ],
+  "target": "watermelon",
+  "answer": 1,
+  "explanation": "🍉=1, 🐝=2. From the equations: 1+2=3 and 2-1=1",
+  "difficulty": "easy"
+}

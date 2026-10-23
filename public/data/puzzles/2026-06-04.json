@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-04",
+  "equations": [
+    { "left": "corn", "operator": "+", "right": "octopus", "result": 6 },
+    { "left": "octopus", "operator": "+", "right": "grapes", "result": 8 },
+    { "left": "corn", "operator": "+", "right": "grapes", "result": 12 }
+  ],
+  "target": "grapes",
+  "answer": 7,
+  "explanation": "🌽=5, 🐙=1, 🍇=7. From the equations: 5+1=6, 1+7=8 and 5+7=12",
+  "difficulty": "medium"
+}

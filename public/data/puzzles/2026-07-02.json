@@ -1,0 +1,11 @@
+{
+  "date": "2026-07-02",
+  "equations": [
+    { "left": "cactus", "operator": "×", "right": "gem", "result": 27 },
+    { "left": "gem", "operator": "-", "right": "cactus", "result": 6 }
+  ],
+  "target": "gem",
+  "answer": 9,
+  "explanation": "🌵=3, 💎=9. From the equations: 3×9=27 and 9-3=6",
+  "difficulty": "medium"
+}

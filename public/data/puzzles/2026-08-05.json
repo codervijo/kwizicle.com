@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-05",
+  "equations": [
+    { "left": "strawberry", "operator": "×", "right": "corn", "result": 27 },
+    { "left": "strawberry", "operator": "-", "right": "corn", "result": 6 }
+  ],
+  "target": "corn",
+  "answer": 3,
+  "explanation": "🍓=9, 🌽=3. From the equations: 9×3=27 and 9-3=6",
+  "difficulty": "medium"
+}

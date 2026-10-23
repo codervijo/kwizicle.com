@@ -1,0 +1,12 @@
+{
+  "date": "2026-05-28",
+  "equations": [
+    { "left": "ice_cream", "operator": "+", "right": "turtle", "result": 10 },
+    { "left": "turtle", "operator": "+", "right": "mushroom", "result": 17 },
+    { "left": "ice_cream", "operator": "+", "right": "mushroom", "result": 11 }
+  ],
+  "target": "mushroom",
+  "answer": 9,
+  "explanation": "🍦=2, 🐢=8, 🍄=9. From the equations: 2+8=10, 8+9=17 and 2+9=11",
+  "difficulty": "medium"
+}

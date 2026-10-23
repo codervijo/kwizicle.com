@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-10",
+  "equations": [
+    { "left": "cherries", "operator": "+", "right": "cactus", "result": 11 },
+    { "left": "cherries", "operator": "-", "right": "cactus", "result": 3 }
+  ],
+  "target": "cactus",
+  "answer": 4,
+  "explanation": "🍒=7, 🌵=4. From the equations: 7+4=11 and 7-4=3",
+  "difficulty": "easy"
+}

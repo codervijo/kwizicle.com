@@ -1,0 +1,11 @@
+{
+  "date": "2026-07-08",
+  "equations": [
+    { "left": "basketball", "operator": "×", "right": "mushroom", "result": 28 },
+    { "left": "basketball", "operator": "-", "right": "mushroom", "result": 3 }
+  ],
+  "target": "mushroom",
+  "answer": 4,
+  "explanation": "🏀=7, 🍄=4. From the equations: 7×4=28 and 7-4=3",
+  "difficulty": "medium"
+}

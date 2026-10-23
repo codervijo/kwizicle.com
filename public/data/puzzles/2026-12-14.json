@@ -1,0 +1,11 @@
+{
+  "date": "2026-12-14",
+  "equations": [
+    { "left": "watermelon", "operator": "+", "right": "corn", "result": 12 },
+    { "left": "watermelon", "operator": "-", "right": "corn", "result": 6 }
+  ],
+  "target": "corn",
+  "answer": 3,
+  "explanation": "🍉=9, 🌽=3. From the equations: 9+3=12 and 9-3=6",
+  "difficulty": "easy"
+}

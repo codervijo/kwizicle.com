@@ -1,0 +1,11 @@
+{
+  "date": "2026-12-01",
+  "equations": [
+    { "left": "corn", "operator": "+", "right": "octopus", "result": 9 },
+    { "left": "corn", "operator": "-", "right": "octopus", "result": 5 }
+  ],
+  "target": "octopus",
+  "answer": 2,
+  "explanation": "🌽=7, 🐙=2. From the equations: 7+2=9 and 7-2=5",
+  "difficulty": "easy"
+}

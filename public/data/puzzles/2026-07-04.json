@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-04",
+  "equations": [
+    { "left": "soccer", "operator": "+", "right": "corn", "result": 6 },
+    { "left": "corn", "operator": "×", "right": "strawberry", "result": 18 },
+    { "left": "strawberry", "operator": "-", "right": "soccer", "result": 5 }
+  ],
+  "target": "soccer",
+  "answer": 4,
+  "explanation": "⚽=4, 🌽=2, 🍓=9. From the equations: 4+2=6, 2×9=18 and 9-4=5",
+  "difficulty": "hard"
+}

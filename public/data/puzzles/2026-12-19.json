@@ -1,0 +1,12 @@
+{
+  "date": "2026-12-19",
+  "equations": [
+    { "left": "car", "operator": "×", "right": "pineapple", "result": 24 },
+    { "left": "pineapple", "operator": "+", "right": "cherries", "result": 7 },
+    { "left": "car", "operator": "-", "right": "cherries", "result": 4 }
+  ],
+  "target": "pineapple",
+  "answer": 3,
+  "explanation": "🚗=8, 🍍=3, 🍒=4. From the equations: 8×3=24, 3+4=7 and 8-4=4",
+  "difficulty": "hard"
+}

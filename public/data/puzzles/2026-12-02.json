@@ -1,0 +1,12 @@
+{
+  "date": "2026-12-02",
+  "equations": [
+    { "left": "rabbit", "operator": "+", "right": "owl", "result": 10 },
+    { "left": "owl", "operator": "+", "right": "gift", "result": 7 },
+    { "left": "rabbit", "operator": "+", "right": "gift", "result": 13 }
+  ],
+  "target": "rabbit",
+  "answer": 8,
+  "explanation": "🐰=8, 🦉=2, 🎁=5. From the equations: 8+2=10, 2+5=7 and 8+5=13",
+  "difficulty": "medium"
+}

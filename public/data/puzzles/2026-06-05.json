@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-05",
+  "equations": [
+    { "left": "gem", "operator": "×", "right": "strawberry", "result": 18 },
+    { "left": "strawberry", "operator": "+", "right": "trophy", "result": 5 },
+    { "left": "gem", "operator": "-", "right": "trophy", "result": 6 }
+  ],
+  "target": "gem",
+  "answer": 9,
+  "explanation": "💎=9, 🍓=2, 🏆=3. From the equations: 9×2=18, 2+3=5 and 9-3=6",
+  "difficulty": "hard"
+}

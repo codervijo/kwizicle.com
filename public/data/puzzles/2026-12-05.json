@@ -1,0 +1,12 @@
+{
+  "date": "2026-12-05",
+  "equations": [
+    { "left": "grapes", "operator": "×", "right": "gem", "result": 18 },
+    { "left": "gem", "operator": "+", "right": "rabbit", "result": 7 },
+    { "left": "grapes", "operator": "-", "right": "rabbit", "result": 4 }
+  ],
+  "target": "gem",
+  "answer": 2,
+  "explanation": "🍇=9, 💎=2, 🐰=5. From the equations: 9×2=18, 2+5=7 and 9-5=4",
+  "difficulty": "hard"
+}

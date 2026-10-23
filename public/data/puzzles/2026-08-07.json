@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-07",
+  "equations": [
+    { "left": "frog", "operator": "×", "right": "watermelon", "result": 45 },
+    { "left": "watermelon", "operator": "+", "right": "lemon", "result": 8 },
+    { "left": "frog", "operator": "-", "right": "lemon", "result": 6 }
+  ],
+  "target": "watermelon",
+  "answer": 5,
+  "explanation": "🐸=9, 🍉=5, 🍋=3. From the equations: 9×5=45, 5+3=8 and 9-3=6",
+  "difficulty": "hard"
+}

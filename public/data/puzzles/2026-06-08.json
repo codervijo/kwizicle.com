@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-08",
+  "equations": [
+    { "left": "grapes", "operator": "+", "right": "watermelon", "result": 14 },
+    { "left": "grapes", "operator": "-", "right": "watermelon", "result": 4 }
+  ],
+  "target": "grapes",
+  "answer": 9,
+  "explanation": "🍇=9, 🍉=5. From the equations: 9+5=14 and 9-5=4",
+  "difficulty": "easy"
+}

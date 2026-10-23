@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-05",
+  "equations": [
+    { "left": "bike", "operator": "+", "right": "donut", "result": 9 },
+    { "left": "donut", "operator": "×", "right": "monkey", "result": 45 },
+    { "left": "monkey", "operator": "-", "right": "bike", "result": 5 }
+  ],
+  "target": "monkey",
+  "answer": 9,
+  "explanation": "🚲=4, 🍩=5, 🐵=9. From the equations: 4+5=9, 5×9=45 and 9-4=5",
+  "difficulty": "hard"
+}

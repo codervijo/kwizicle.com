@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-06",
+  "equations": [
+    { "left": "bee", "operator": "+", "right": "cookie", "result": 6 },
+    { "left": "cookie", "operator": "+", "right": "rabbit", "result": 11 },
+    { "left": "bee", "operator": "+", "right": "rabbit", "result": 9 }
+  ],
+  "target": "cookie",
+  "answer": 4,
+  "explanation": "🐝=2, 🍪=4, 🐰=7. From the equations: 2+4=6, 4+7=11 and 2+7=9",
+  "difficulty": "medium"
+}

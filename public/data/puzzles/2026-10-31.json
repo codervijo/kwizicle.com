@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-31",
+  "equations": [
+    { "left": "ice_cream", "operator": "×", "right": "soccer", "result": 27 },
+    { "left": "soccer", "operator": "+", "right": "turtle", "result": 8 },
+    { "left": "ice_cream", "operator": "-", "right": "turtle", "result": 4 }
+  ],
+  "target": "ice_cream",
+  "answer": 9,
+  "explanation": "🍦=9, ⚽=3, 🐢=5. From the equations: 9×3=27, 3+5=8 and 9-5=4",
+  "difficulty": "hard"
+}

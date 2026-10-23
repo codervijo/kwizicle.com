@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-15",
+  "equations": [
+    { "left": "octopus", "operator": "+", "right": "bell", "result": 16 },
+    { "left": "bell", "operator": "+", "right": "banana", "result": 11 },
+    { "left": "octopus", "operator": "+", "right": "banana", "result": 9 }
+  ],
+  "target": "octopus",
+  "answer": 7,
+  "explanation": "🐙=7, 🔔=9, 🍌=2. From the equations: 7+9=16, 9+2=11 and 7+2=9",
+  "difficulty": "medium"
+}

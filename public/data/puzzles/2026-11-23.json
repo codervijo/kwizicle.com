@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-23",
+  "equations": [
+    { "left": "monkey", "operator": "+", "right": "lion", "result": 12 },
+    { "left": "monkey", "operator": "-", "right": "lion", "result": 4 }
+  ],
+  "target": "monkey",
+  "answer": 8,
+  "explanation": "🐵=8, 🦁=4. From the equations: 8+4=12 and 8-4=4",
+  "difficulty": "easy"
+}

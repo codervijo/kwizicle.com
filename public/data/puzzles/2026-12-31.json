@@ -1,0 +1,11 @@
+{
+  "date": "2026-12-31",
+  "equations": [
+    { "left": "lion", "operator": "×", "right": "turtle", "result": 28 },
+    { "left": "turtle", "operator": "-", "right": "lion", "result": 3 }
+  ],
+  "target": "turtle",
+  "answer": 7,
+  "explanation": "🦁=4, 🐢=7. From the equations: 4×7=28 and 7-4=3",
+  "difficulty": "medium"
+}

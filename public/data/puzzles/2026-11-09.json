@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-09",
+  "equations": [
+    { "left": "corn", "operator": "+", "right": "gem", "result": 10 },
+    { "left": "corn", "operator": "-", "right": "gem", "result": 6 }
+  ],
+  "target": "gem",
+  "answer": 2,
+  "explanation": "🌽=8, 💎=2. From the equations: 8+2=10 and 8-2=6",
+  "difficulty": "easy"
+}

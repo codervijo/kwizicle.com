@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-14",
+  "equations": [
+    { "left": "grapes", "operator": "+", "right": "mushroom", "result": 17 },
+    { "left": "grapes", "operator": "-", "right": "mushroom", "result": 1 }
+  ],
+  "target": "mushroom",
+  "answer": 8,
+  "explanation": "🍇=9, 🍄=8. From the equations: 9+8=17 and 9-8=1",
+  "difficulty": "easy"
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-31",
+  "equations": [
+    { "left": "pineapple", "operator": "+", "right": "monkey", "result": 14 },
+    { "left": "monkey", "operator": "-", "right": "pineapple", "result": 4 }
+  ],
+  "target": "pineapple",
+  "answer": 5,
+  "explanation": "🍍=5, 🐵=9. From the equations: 5+9=14 and 9-5=4",
+  "difficulty": "easy"
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-25",
+  "equations": [
+    { "left": "lemon", "operator": "+", "right": "corn", "result": 14 },
+    { "left": "corn", "operator": "+", "right": "donut", "result": 15 },
+    { "left": "lemon", "operator": "+", "right": "donut", "result": 11 }
+  ],
+  "target": "corn",
+  "answer": 9,
+  "explanation": "🍋=5, 🌽=9, 🍩=6. From the equations: 5+9=14, 9+6=15 and 5+6=11",
+  "difficulty": "medium"
+}

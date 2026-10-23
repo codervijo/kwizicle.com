@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-15",
+  "equations": [
+    { "left": "cookie", "operator": "+", "right": "bike", "result": 6 },
+    { "left": "bike", "operator": "×", "right": "banana", "result": 36 },
+    { "left": "banana", "operator": "-", "right": "cookie", "result": 7 }
+  ],
+  "target": "cookie",
+  "answer": 2,
+  "explanation": "🍪=2, 🚲=4, 🍌=9. From the equations: 2+4=6, 4×9=36 and 9-2=7",
+  "difficulty": "hard"
+}

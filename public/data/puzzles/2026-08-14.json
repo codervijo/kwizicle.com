@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-14",
+  "equations": [
+    { "left": "rocket", "operator": "+", "right": "balloon", "result": 6 },
+    { "left": "balloon", "operator": "×", "right": "basketball", "result": 14 },
+    { "left": "basketball", "operator": "-", "right": "rocket", "result": 3 }
+  ],
+  "target": "basketball",
+  "answer": 7,
+  "explanation": "🚀=4, 🎈=2, 🏀=7. From the equations: 4+2=6, 2×7=14 and 7-4=3",
+  "difficulty": "hard"
+}

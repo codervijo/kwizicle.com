@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-02",
+  "equations": [
+    { "left": "bee", "operator": "+", "right": "ice_cream", "result": 7 },
+    { "left": "ice_cream", "operator": "×", "right": "banana", "result": 32 },
+    { "left": "banana", "operator": "-", "right": "bee", "result": 5 }
+  ],
+  "target": "bee",
+  "answer": 3,
+  "explanation": "🐝=3, 🍦=4, 🍌=8. From the equations: 3+4=7, 4×8=32 and 8-3=5",
+  "difficulty": "hard"
+}

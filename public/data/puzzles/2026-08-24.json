@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-24",
+  "equations": [
+    { "left": "taco", "operator": "+", "right": "gift", "result": 12 },
+    { "left": "gift", "operator": "-", "right": "taco", "result": 6 }
+  ],
+  "target": "gift",
+  "answer": 9,
+  "explanation": "🌮=3, 🎁=9. From the equations: 3+9=12 and 9-3=6",
+  "difficulty": "easy"
+}

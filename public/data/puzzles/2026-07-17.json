@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-17",
+  "equations": [
+    { "left": "soccer", "operator": "+", "right": "monkey", "result": 8 },
+    { "left": "monkey", "operator": "×", "right": "unicorn", "result": 16 },
+    { "left": "unicorn", "operator": "-", "right": "soccer", "result": 2 }
+  ],
+  "target": "unicorn",
+  "answer": 8,
+  "explanation": "⚽=6, 🐵=2, 🦄=8. From the equations: 6+2=8, 2×8=16 and 8-6=2",
+  "difficulty": "hard"
+}

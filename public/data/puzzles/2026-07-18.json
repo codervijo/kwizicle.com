@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-18",
+  "equations": [
+    { "left": "car", "operator": "×", "right": "lemon", "result": 18 },
+    { "left": "lemon", "operator": "+", "right": "avocado", "result": 6 },
+    { "left": "car", "operator": "-", "right": "avocado", "result": 5 }
+  ],
+  "target": "avocado",
+  "answer": 4,
+  "explanation": "🚗=9, 🍋=2, 🥑=4. From the equations: 9×2=18, 2+4=6 and 9-4=5",
+  "difficulty": "hard"
+}

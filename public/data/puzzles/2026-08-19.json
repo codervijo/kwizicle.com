@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-19",
+  "equations": [
+    { "left": "pineapple", "operator": "×", "right": "lion", "result": 18 },
+    { "left": "lion", "operator": "-", "right": "pineapple", "result": 3 }
+  ],
+  "target": "pineapple",
+  "answer": 3,
+  "explanation": "🍍=3, 🦁=6. From the equations: 3×6=18 and 6-3=3",
+  "difficulty": "medium"
+}

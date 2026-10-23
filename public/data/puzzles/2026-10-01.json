@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-01",
+  "equations": [
+    { "left": "gift", "operator": "+", "right": "mushroom", "result": 17 },
+    { "left": "mushroom", "operator": "+", "right": "car", "result": 12 },
+    { "left": "gift", "operator": "+", "right": "car", "result": 13 }
+  ],
+  "target": "mushroom",
+  "answer": 8,
+  "explanation": "🎁=9, 🍄=8, 🚗=4. From the equations: 9+8=17, 8+4=12 and 9+4=13",
+  "difficulty": "medium"
+}

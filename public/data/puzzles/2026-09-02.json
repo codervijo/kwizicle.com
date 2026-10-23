@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-02",
+  "equations": [
+    { "left": "strawberry", "operator": "×", "right": "lion", "result": 28 },
+    { "left": "lion", "operator": "-", "right": "strawberry", "result": 3 }
+  ],
+  "target": "lion",
+  "answer": 7,
+  "explanation": "🍓=4, 🦁=7. From the equations: 4×7=28 and 7-4=3",
+  "difficulty": "medium"
+}

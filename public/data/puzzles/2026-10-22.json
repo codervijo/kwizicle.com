@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-22",
+  "equations": [
+    { "left": "mushroom", "operator": "×", "right": "panda", "result": 63 },
+    { "left": "mushroom", "operator": "-", "right": "panda", "result": 2 }
+  ],
+  "target": "panda",
+  "answer": 7,
+  "explanation": "🍄=9, 🐼=7. From the equations: 9×7=63 and 9-7=2",
+  "difficulty": "medium"
+}

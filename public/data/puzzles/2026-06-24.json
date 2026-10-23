@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-24",
+  "equations": [
+    { "left": "pineapple", "operator": "×", "right": "cookie", "result": 8 },
+    { "left": "pineapple", "operator": "-", "right": "cookie", "result": 2 }
+  ],
+  "target": "pineapple",
+  "answer": 4,
+  "explanation": "🍍=4, 🍪=2. From the equations: 4×2=8 and 4-2=2",
+  "difficulty": "medium"
+}

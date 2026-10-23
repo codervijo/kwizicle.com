@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-10",
+  "equations": [
+    { "left": "lion", "operator": "×", "right": "lemon", "result": 18 },
+    { "left": "lemon", "operator": "+", "right": "monkey", "result": 9 },
+    { "left": "lion", "operator": "-", "right": "monkey", "result": 2 }
+  ],
+  "target": "lion",
+  "answer": 9,
+  "explanation": "🦁=9, 🍋=2, 🐵=7. From the equations: 9×2=18, 2+7=9 and 9-7=2",
+  "difficulty": "hard"
+}

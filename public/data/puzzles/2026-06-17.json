@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-17",
+  "equations": [
+    { "left": "bike", "operator": "+", "right": "mushroom", "result": 5 },
+    { "left": "mushroom", "operator": "+", "right": "rocket", "result": 9 },
+    { "left": "bike", "operator": "+", "right": "rocket", "result": 10 }
+  ],
+  "target": "rocket",
+  "answer": 7,
+  "explanation": "🚲=3, 🍄=2, 🚀=7. From the equations: 3+2=5, 2+7=9 and 3+7=10",
+  "difficulty": "medium"
+}

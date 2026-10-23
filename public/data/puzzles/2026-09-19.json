@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-19",
+  "equations": [
+    { "left": "banana", "operator": "+", "right": "soccer", "result": 7 },
+    { "left": "soccer", "operator": "×", "right": "cherries", "result": 14 },
+    { "left": "cherries", "operator": "-", "right": "banana", "result": 2 }
+  ],
+  "target": "cherries",
+  "answer": 7,
+  "explanation": "🍌=5, ⚽=2, 🍒=7. From the equations: 5+2=7, 2×7=14 and 7-5=2",
+  "difficulty": "hard"
+}

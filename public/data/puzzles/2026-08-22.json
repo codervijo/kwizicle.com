@@ -1,0 +1,12 @@
+{
+  "date": "2026-08-22",
+  "equations": [
+    { "left": "banana", "operator": "×", "right": "rabbit", "result": 18 },
+    { "left": "rabbit", "operator": "+", "right": "mushroom", "result": 8 },
+    { "left": "banana", "operator": "-", "right": "mushroom", "result": 3 }
+  ],
+  "target": "rabbit",
+  "answer": 2,
+  "explanation": "🍌=9, 🐰=2, 🍄=6. From the equations: 9×2=18, 2+6=8 and 9-6=3",
+  "difficulty": "hard"
+}

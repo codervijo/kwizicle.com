@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-12",
+  "equations": [
+    { "left": "owl", "operator": "+", "right": "car", "result": 6 },
+    { "left": "owl", "operator": "-", "right": "car", "result": 4 }
+  ],
+  "target": "car",
+  "answer": 1,
+  "explanation": "🦉=5, 🚗=1. From the equations: 5+1=6 and 5-1=4",
+  "difficulty": "easy"
+}

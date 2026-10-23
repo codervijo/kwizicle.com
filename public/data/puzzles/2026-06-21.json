@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-21",
+  "equations": [
+    { "left": "bell", "operator": "+", "right": "octopus", "result": 10 },
+    { "left": "bell", "operator": "-", "right": "octopus", "result": 4 }
+  ],
+  "target": "bell",
+  "answer": 7,
+  "explanation": "🔔=7, 🐙=3. From the equations: 7+3=10 and 7-3=4",
+  "difficulty": "easy"
+}

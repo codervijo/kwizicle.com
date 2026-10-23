@@ -1,0 +1,11 @@
+{
+  "date": "2026-07-19",
+  "equations": [
+    { "left": "cake", "operator": "+", "right": "owl", "result": 10 },
+    { "left": "cake", "operator": "-", "right": "owl", "result": 4 }
+  ],
+  "target": "owl",
+  "answer": 3,
+  "explanation": "🍰=7, 🦉=3. From the equations: 7+3=10 and 7-3=4",
+  "difficulty": "easy"
+}

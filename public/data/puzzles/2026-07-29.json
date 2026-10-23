@@ -1,0 +1,11 @@
+{
+  "date": "2026-07-29",
+  "equations": [
+    { "left": "panda", "operator": "×", "right": "mushroom", "result": 15 },
+    { "left": "mushroom", "operator": "-", "right": "panda", "result": 2 }
+  ],
+  "target": "panda",
+  "answer": 3,
+  "explanation": "🐼=3, 🍄=5. From the equations: 3×5=15 and 5-3=2",
+  "difficulty": "medium"
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-30",
+  "equations": [
+    { "left": "rabbit", "operator": "+", "right": "owl", "result": 12 },
+    { "left": "owl", "operator": "+", "right": "rocket", "result": 10 },
+    { "left": "rabbit", "operator": "+", "right": "rocket", "result": 14 }
+  ],
+  "target": "owl",
+  "answer": 4,
+  "explanation": "🐰=8, 🦉=4, 🚀=6. From the equations: 8+4=12, 4+6=10 and 8+6=14",
+  "difficulty": "medium"
+}

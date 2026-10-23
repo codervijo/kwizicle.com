@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-07",
+  "equations": [
+    { "left": "lion", "operator": "×", "right": "soccer", "result": 35 },
+    { "left": "soccer", "operator": "-", "right": "lion", "result": 2 }
+  ],
+  "target": "soccer",
+  "answer": 7,
+  "explanation": "🦁=5, ⚽=7. From the equations: 5×7=35 and 7-5=2",
+  "difficulty": "medium"
+}

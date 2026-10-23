@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-22",
+  "equations": [
+    { "left": "grapes", "operator": "+", "right": "car", "result": 15 },
+    { "left": "car", "operator": "-", "right": "grapes", "result": 3 }
+  ],
+  "target": "grapes",
+  "answer": 6,
+  "explanation": "🍇=6, 🚗=9. From the equations: 6+9=15 and 9-6=3",
+  "difficulty": "easy"
+}

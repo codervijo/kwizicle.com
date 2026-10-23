@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-01",
+  "equations": [
+    { "left": "avocado", "operator": "+", "right": "cherries", "result": 17 },
+    { "left": "cherries", "operator": "-", "right": "avocado", "result": 1 }
+  ],
+  "target": "cherries",
+  "answer": 9,
+  "explanation": "🥑=8, 🍒=9. From the equations: 8+9=17 and 9-8=1",
+  "difficulty": "easy"
+}

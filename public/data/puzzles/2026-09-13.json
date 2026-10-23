@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-13",
+  "equations": [
+    { "left": "rocket", "operator": "+", "right": "donut", "result": 6 },
+    { "left": "donut", "operator": "-", "right": "rocket", "result": 4 }
+  ],
+  "target": "donut",
+  "answer": 5,
+  "explanation": "🚀=1, 🍩=5. From the equations: 1+5=6 and 5-1=4",
+  "difficulty": "easy"
+}

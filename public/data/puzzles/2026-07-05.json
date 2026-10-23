@@ -1,0 +1,11 @@
+{
+  "date": "2026-07-05",
+  "equations": [
+    { "left": "banana", "operator": "+", "right": "grapes", "result": 10 },
+    { "left": "grapes", "operator": "-", "right": "banana", "result": 6 }
+  ],
+  "target": "banana",
+  "answer": 2,
+  "explanation": "🍌=2, 🍇=8. From the equations: 2+8=10 and 8-2=6",
+  "difficulty": "easy"
+}

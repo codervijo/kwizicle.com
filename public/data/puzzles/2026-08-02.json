@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-02",
+  "equations": [
+    { "left": "grapes", "operator": "+", "right": "lemon", "result": 10 },
+    { "left": "lemon", "operator": "-", "right": "grapes", "result": 8 }
+  ],
+  "target": "lemon",
+  "answer": 9,
+  "explanation": "🍇=1, 🍋=9. From the equations: 1+9=10 and 9-1=8",
+  "difficulty": "easy"
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-20",
+  "equations": [
+    { "left": "strawberry", "operator": "+", "right": "donut", "result": 16 },
+    { "left": "donut", "operator": "-", "right": "strawberry", "result": 2 }
+  ],
+  "target": "strawberry",
+  "answer": 7,
+  "explanation": "🍓=7, 🍩=9. From the equations: 7+9=16 and 9-7=2",
+  "difficulty": "easy"
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-12-18",
+  "equations": [
+    { "left": "corn", "operator": "×", "right": "trophy", "result": 54 },
+    { "left": "trophy", "operator": "+", "right": "mushroom", "result": 9 },
+    { "left": "corn", "operator": "-", "right": "mushroom", "result": 6 }
+  ],
+  "target": "corn",
+  "answer": 9,
+  "explanation": "🌽=9, 🏆=6, 🍄=3. From the equations: 9×6=54, 6+3=9 and 9-3=6",
+  "difficulty": "hard"
+}

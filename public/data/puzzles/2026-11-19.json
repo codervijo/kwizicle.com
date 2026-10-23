@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-19",
+  "equations": [
+    { "left": "fox", "operator": "+", "right": "banana", "result": 12 },
+    { "left": "banana", "operator": "+", "right": "rabbit", "result": 9 },
+    { "left": "fox", "operator": "+", "right": "rabbit", "result": 15 }
+  ],
+  "target": "banana",
+  "answer": 3,
+  "explanation": "🦊=9, 🍌=3, 🐰=6. From the equations: 9+3=12, 3+6=9 and 9+6=15",
+  "difficulty": "medium"
+}

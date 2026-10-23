@@ -1,0 +1,11 @@
+{
+  "date": "2026-12-27",
+  "equations": [
+    { "left": "strawberry", "operator": "+", "right": "trophy", "result": 17 },
+    { "left": "trophy", "operator": "-", "right": "strawberry", "result": 1 }
+  ],
+  "target": "strawberry",
+  "answer": 8,
+  "explanation": "🍓=8, 🏆=9. From the equations: 8+9=17 and 9-8=1",
+  "difficulty": "easy"
+}

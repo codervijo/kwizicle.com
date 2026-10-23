@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-06",
+  "equations": [
+    { "left": "lion", "operator": "+", "right": "donut", "result": 7 },
+    { "left": "donut", "operator": "×", "right": "corn", "result": 18 },
+    { "left": "corn", "operator": "-", "right": "lion", "result": 4 }
+  ],
+  "target": "donut",
+  "answer": 2,
+  "explanation": "🦁=5, 🍩=2, 🌽=9. From the equations: 5+2=7, 2×9=18 and 9-5=4",
+  "difficulty": "hard"
+}

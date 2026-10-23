@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-16",
+  "equations": [
+    { "left": "rabbit", "operator": "+", "right": "mushroom", "result": 9 },
+    { "left": "mushroom", "operator": "+", "right": "penguin", "result": 15 },
+    { "left": "rabbit", "operator": "+", "right": "penguin", "result": 10 }
+  ],
+  "target": "rabbit",
+  "answer": 2,
+  "explanation": "🐰=2, 🍄=7, 🐧=8. From the equations: 2+7=9, 7+8=15 and 2+8=10",
+  "difficulty": "medium"
+}

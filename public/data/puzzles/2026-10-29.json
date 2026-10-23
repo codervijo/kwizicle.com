@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-29",
+  "equations": [
+    { "left": "owl", "operator": "×", "right": "octopus", "result": 10 },
+    { "left": "owl", "operator": "-", "right": "octopus", "result": 3 }
+  ],
+  "target": "owl",
+  "answer": 5,
+  "explanation": "🦉=5, 🐙=2. From the equations: 5×2=10 and 5-2=3",
+  "difficulty": "medium"
+}

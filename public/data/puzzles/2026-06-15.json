@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-15",
+  "equations": [
+    { "left": "panda", "operator": "+", "right": "basketball", "result": 11 },
+    { "left": "basketball", "operator": "-", "right": "panda", "result": 5 }
+  ],
+  "target": "basketball",
+  "answer": 8,
+  "explanation": "🐼=3, 🏀=8. From the equations: 3+8=11 and 8-3=5",
+  "difficulty": "easy"
+}

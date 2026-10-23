@@ -1,0 +1,12 @@
+{
+  "date": "2026-12-26",
+  "equations": [
+    { "left": "banana", "operator": "+", "right": "mushroom", "result": 7 },
+    { "left": "mushroom", "operator": "×", "right": "panda", "result": 40 },
+    { "left": "panda", "operator": "-", "right": "banana", "result": 6 }
+  ],
+  "target": "banana",
+  "answer": 2,
+  "explanation": "🍌=2, 🍄=5, 🐼=8. From the equations: 2+5=7, 5×8=40 and 8-2=6",
+  "difficulty": "hard"
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-23",
+  "equations": [
+    { "left": "grapes", "operator": "+", "right": "monkey", "result": 9 },
+    { "left": "grapes", "operator": "-", "right": "monkey", "result": 1 }
+  ],
+  "target": "grapes",
+  "answer": 5,
+  "explanation": "🍇=5, 🐵=4. From the equations: 5+4=9 and 5-4=1",
+  "difficulty": "easy"
+}

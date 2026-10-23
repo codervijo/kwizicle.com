@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-11",
+  "equations": [
+    { "left": "watermelon", "operator": "+", "right": "octopus", "result": 5 },
+    { "left": "octopus", "operator": "×", "right": "cookie", "result": 18 },
+    { "left": "cookie", "operator": "-", "right": "watermelon", "result": 6 }
+  ],
+  "target": "watermelon",
+  "answer": 3,
+  "explanation": "🍉=3, 🐙=2, 🍪=9. From the equations: 3+2=5, 2×9=18 and 9-3=6",
+  "difficulty": "hard"
+}

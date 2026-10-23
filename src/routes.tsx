@@ -7,10 +7,10 @@ import BlogEmojiPuzzlesWithAnswers from "@/pages/BlogEmojiPuzzlesWithAnswers";
 import StatsPage from "@/pages/StatsPage";
 import ExtrasPage from "@/pages/ExtrasPage";
 import NotFound from "@/pages/NotFound";
-import { ArchivePage, PuzzleByDatePage, AnswerByDatePage } from "@/pages/dormant";
+import { ArchivePage, PuzzleByDatePage, AnswerByDatePage } from "@/pages/ArchivePages";
 
-// Route table for vite-react-ssg (data router). Only "/", "/emoji-math-puzzle"
-// and "/blog/emoji-puzzles-with-answers" are prerendered at build time — see
+// Route table for vite-react-ssg (data router). The content pages, /archive
+// and /answer/<date> for past days are prerendered at build time — see
 // vite.config.ts `ssgOptions.includedRoutes`. Every other route stays
 // client-side-rendered and is served via Cloudflare's SPA fallback.
 export const routes: RouteRecord[] = [
@@ -30,7 +30,7 @@ export const routes: RouteRecord[] = [
       { path: "extras", element: <ExtrasPage /> },
       { path: "stats", element: <StatsPage /> },
 
-      // DORMANT (see src/pages/dormant.tsx) — NOT prerendered, NOT in sitemap.
+      // Archive (see src/pages/ArchivePages.tsx). /puzzle/:date is client-only.
       { path: "archive", element: <ArchivePage /> },
       { path: "puzzle/:date", element: <PuzzleByDatePage /> },
       { path: "answer/:date", element: <AnswerByDatePage /> },

@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-31",
+  "equations": [
+    { "left": "trophy", "operator": "×", "right": "banana", "result": 40 },
+    { "left": "banana", "operator": "+", "right": "bell", "result": 7 },
+    { "left": "trophy", "operator": "-", "right": "bell", "result": 6 }
+  ],
+  "target": "trophy",
+  "answer": 8,
+  "explanation": "🏆=8, 🍌=5, 🔔=2. From the equations: 8×5=40, 5+2=7 and 8-2=6",
+  "difficulty": "hard"
+}

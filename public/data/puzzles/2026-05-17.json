@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-17",
+  "equations": [
+    { "left": "taco", "operator": "+", "right": "fox", "result": 6 },
+    { "left": "taco", "operator": "-", "right": "fox", "result": 4 }
+  ],
+  "target": "taco",
+  "answer": 5,
+  "explanation": "🌮=5, 🦊=1. From the equations: 5+1=6 and 5-1=4",
+  "difficulty": "easy"
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-16",
+  "equations": [
+    { "left": "cactus", "operator": "×", "right": "rabbit", "result": 15 },
+    { "left": "rabbit", "operator": "+", "right": "gem", "result": 5 },
+    { "left": "cactus", "operator": "-", "right": "gem", "result": 3 }
+  ],
+  "target": "cactus",
+  "answer": 5,
+  "explanation": "🌵=5, 🐰=3, 💎=2. From the equations: 5×3=15, 3+2=5 and 5-2=3",
+  "difficulty": "hard"
+}

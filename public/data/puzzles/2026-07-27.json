@@ -1,0 +1,11 @@
+{
+  "date": "2026-07-27",
+  "equations": [
+    { "left": "bike", "operator": "+", "right": "watermelon", "result": 15 },
+    { "left": "watermelon", "operator": "-", "right": "bike", "result": 1 }
+  ],
+  "target": "bike",
+  "answer": 7,
+  "explanation": "🚲=7, 🍉=8. From the equations: 7+8=15 and 8-7=1",
+  "difficulty": "easy"
+}

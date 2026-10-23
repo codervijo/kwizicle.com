@@ -1,0 +1,11 @@
+{
+  "date": "2026-07-12",
+  "equations": [
+    { "left": "cactus", "operator": "+", "right": "avocado", "result": 9 },
+    { "left": "avocado", "operator": "-", "right": "cactus", "result": 7 }
+  ],
+  "target": "avocado",
+  "answer": 8,
+  "explanation": "🌵=1, 🥑=8. From the equations: 1+8=9 and 8-1=7",
+  "difficulty": "easy"
+}

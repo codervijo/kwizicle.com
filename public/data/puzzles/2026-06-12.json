@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-12",
+  "equations": [
+    { "left": "crown", "operator": "×", "right": "car", "result": 27 },
+    { "left": "car", "operator": "+", "right": "bee", "result": 7 },
+    { "left": "crown", "operator": "-", "right": "bee", "result": 5 }
+  ],
+  "target": "car",
+  "answer": 3,
+  "explanation": "👑=9, 🚗=3, 🐝=4. From the equations: 9×3=27, 3+4=7 and 9-4=5",
+  "difficulty": "hard"
+}

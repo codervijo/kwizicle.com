@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-07",
+  "equations": [
+    { "left": "taco", "operator": "+", "right": "lion", "result": 9 },
+    { "left": "taco", "operator": "-", "right": "lion", "result": 7 }
+  ],
+  "target": "taco",
+  "answer": 8,
+  "explanation": "🌮=8, 🦁=1. From the equations: 8+1=9 and 8-1=7",
+  "difficulty": "easy"
+}

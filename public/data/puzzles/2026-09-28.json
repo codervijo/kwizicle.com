@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-28",
+  "equations": [
+    { "left": "gem", "operator": "+", "right": "unicorn", "result": 14 },
+    { "left": "gem", "operator": "-", "right": "unicorn", "result": 2 }
+  ],
+  "target": "gem",
+  "answer": 8,
+  "explanation": "💎=8, 🦄=6. From the equations: 8+6=14 and 8-6=2",
+  "difficulty": "easy"
+}

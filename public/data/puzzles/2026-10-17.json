@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-17",
+  "equations": [
+    { "left": "octopus", "operator": "×", "right": "owl", "result": 63 },
+    { "left": "owl", "operator": "+", "right": "basketball", "result": 9 },
+    { "left": "octopus", "operator": "-", "right": "basketball", "result": 7 }
+  ],
+  "target": "octopus",
+  "answer": 9,
+  "explanation": "🐙=9, 🦉=7, 🏀=2. From the equations: 9×7=63, 7+2=9 and 9-2=7",
+  "difficulty": "hard"
+}

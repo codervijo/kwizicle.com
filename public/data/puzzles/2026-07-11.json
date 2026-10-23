@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-11",
+  "equations": [
+    { "left": "soccer", "operator": "×", "right": "donut", "result": 40 },
+    { "left": "donut", "operator": "+", "right": "octopus", "result": 8 },
+    { "left": "soccer", "operator": "-", "right": "octopus", "result": 5 }
+  ],
+  "target": "octopus",
+  "answer": 3,
+  "explanation": "⚽=8, 🍩=5, 🐙=3. From the equations: 8×5=40, 5+3=8 and 8-3=5",
+  "difficulty": "hard"
+}

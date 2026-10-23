@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-10",
+  "equations": [
+    { "left": "banana", "operator": "×", "right": "gift", "result": 35 },
+    { "left": "banana", "operator": "-", "right": "gift", "result": 2 }
+  ],
+  "target": "gift",
+  "answer": 5,
+  "explanation": "🍌=7, 🎁=5. From the equations: 7×5=35 and 7-5=2",
+  "difficulty": "medium"
+}

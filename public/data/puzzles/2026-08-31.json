@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-31",
+  "equations": [
+    { "left": "rabbit", "operator": "+", "right": "penguin", "result": 14 },
+    { "left": "penguin", "operator": "-", "right": "rabbit", "result": 4 }
+  ],
+  "target": "rabbit",
+  "answer": 5,
+  "explanation": "🐰=5, 🐧=9. From the equations: 5+9=14 and 9-5=4",
+  "difficulty": "easy"
+}

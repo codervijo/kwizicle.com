@@ -1,0 +1,11 @@
+{
+  "date": "2026-12-06",
+  "equations": [
+    { "left": "bee", "operator": "+", "right": "unicorn", "result": 10 },
+    { "left": "unicorn", "operator": "-", "right": "bee", "result": 8 }
+  ],
+  "target": "unicorn",
+  "answer": 9,
+  "explanation": "🐝=1, 🦄=9. From the equations: 1+9=10 and 9-1=8",
+  "difficulty": "easy"
+}

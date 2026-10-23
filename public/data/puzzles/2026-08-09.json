@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-09",
+  "equations": [
+    { "left": "bike", "operator": "+", "right": "unicorn", "result": 14 },
+    { "left": "unicorn", "operator": "-", "right": "bike", "result": 4 }
+  ],
+  "target": "bike",
+  "answer": 5,
+  "explanation": "🚲=5, 🦄=9. From the equations: 5+9=14 and 9-5=4",
+  "difficulty": "easy"
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-19",
+  "equations": [
+    { "left": "cookie", "operator": "×", "right": "basketball", "result": 28 },
+    { "left": "basketball", "operator": "+", "right": "owl", "result": 7 },
+    { "left": "cookie", "operator": "-", "right": "owl", "result": 4 }
+  ],
+  "target": "basketball",
+  "answer": 4,
+  "explanation": "🍪=7, 🏀=4, 🦉=3. From the equations: 7×4=28, 4+3=7 and 7-3=4",
+  "difficulty": "hard"
+}

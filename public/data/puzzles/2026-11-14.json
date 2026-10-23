@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-14",
+  "equations": [
+    { "left": "cherries", "operator": "+", "right": "lion", "result": 7 },
+    { "left": "lion", "operator": "×", "right": "pineapple", "result": 32 },
+    { "left": "pineapple", "operator": "-", "right": "cherries", "result": 5 }
+  ],
+  "target": "cherries",
+  "answer": 3,
+  "explanation": "🍒=3, 🦁=4, 🍍=8. From the equations: 3+4=7, 4×8=32 and 8-3=5",
+  "difficulty": "hard"
+}

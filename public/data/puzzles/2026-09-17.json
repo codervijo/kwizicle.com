@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-17",
+  "equations": [
+    { "left": "bee", "operator": "×", "right": "balloon", "result": 32 },
+    { "left": "bee", "operator": "-", "right": "balloon", "result": 4 }
+  ],
+  "target": "bee",
+  "answer": 8,
+  "explanation": "🐝=8, 🎈=4. From the equations: 8×4=32 and 8-4=4",
+  "difficulty": "medium"
+}

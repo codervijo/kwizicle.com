@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-22",
+  "equations": [
+    { "left": "gift", "operator": "+", "right": "grapes", "result": 4 },
+    { "left": "grapes", "operator": "+", "right": "basketball", "result": 9 },
+    { "left": "gift", "operator": "+", "right": "basketball", "result": 7 }
+  ],
+  "target": "basketball",
+  "answer": 6,
+  "explanation": "🎁=1, 🍇=3, 🏀=6. From the equations: 1+3=4, 3+6=9 and 1+6=7",
+  "difficulty": "medium"
+}

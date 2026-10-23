@@ -1,0 +1,11 @@
+{
+  "date": "2026-07-14",
+  "equations": [
+    { "left": "donut", "operator": "+", "right": "gem", "result": 12 },
+    { "left": "gem", "operator": "-", "right": "donut", "result": 2 }
+  ],
+  "target": "donut",
+  "answer": 5,
+  "explanation": "🍩=5, 💎=7. From the equations: 5+7=12 and 7-5=2",
+  "difficulty": "easy"
+}

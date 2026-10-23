@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-12",
+  "equations": [
+    { "left": "trophy", "operator": "×", "right": "crown", "result": 20 },
+    { "left": "trophy", "operator": "-", "right": "crown", "result": 1 }
+  ],
+  "target": "trophy",
+  "answer": 5,
+  "explanation": "🏆=5, 👑=4. From the equations: 5×4=20 and 5-4=1",
+  "difficulty": "medium"
+}

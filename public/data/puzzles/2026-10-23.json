@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-23",
+  "equations": [
+    { "left": "gem", "operator": "+", "right": "crown", "result": 7 },
+    { "left": "crown", "operator": "×", "right": "taco", "result": 36 },
+    { "left": "taco", "operator": "-", "right": "gem", "result": 6 }
+  ],
+  "target": "taco",
+  "answer": 9,
+  "explanation": "💎=3, 👑=4, 🌮=9. From the equations: 3+4=7, 4×9=36 and 9-3=6",
+  "difficulty": "hard"
+}

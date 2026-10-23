@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-26",
+  "equations": [
+    { "left": "taco", "operator": "+", "right": "fox", "result": 11 },
+    { "left": "fox", "operator": "+", "right": "mushroom", "result": 12 },
+    { "left": "taco", "operator": "+", "right": "mushroom", "result": 15 }
+  ],
+  "target": "fox",
+  "answer": 4,
+  "explanation": "🌮=7, 🦊=4, 🍄=8. From the equations: 7+4=11, 4+8=12 and 7+8=15",
+  "difficulty": "medium"
+}

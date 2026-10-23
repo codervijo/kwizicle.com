@@ -1,0 +1,12 @@
+{
+  "date": "2026-05-16",
+  "equations": [
+    { "left": "unicorn", "operator": "×", "right": "pineapple", "result": 18 },
+    { "left": "pineapple", "operator": "+", "right": "bell", "result": 9 },
+    { "left": "unicorn", "operator": "-", "right": "bell", "result": 2 }
+  ],
+  "target": "unicorn",
+  "answer": 9,
+  "explanation": "🦄=9, 🍍=2, 🔔=7. From the equations: 9×2=18, 2+7=9 and 9-7=2",
+  "difficulty": "hard"
+}

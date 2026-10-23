@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-15",
+  "equations": [
+    { "left": "gem", "operator": "+", "right": "frog", "result": 9 },
+    { "left": "gem", "operator": "-", "right": "frog", "result": 1 }
+  ],
+  "target": "gem",
+  "answer": 5,
+  "explanation": "💎=5, 🐸=4. From the equations: 5+4=9 and 5-4=1",
+  "difficulty": "easy"
+}

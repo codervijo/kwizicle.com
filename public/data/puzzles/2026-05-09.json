@@ -1,0 +1,12 @@
+{
+  "date": "2026-05-09",
+  "equations": [
+    { "left": "fox", "operator": "+", "right": "cookie", "result": 7 },
+    { "left": "cookie", "operator": "×", "right": "strawberry", "result": 45 },
+    { "left": "strawberry", "operator": "-", "right": "fox", "result": 7 }
+  ],
+  "target": "fox",
+  "answer": 2,
+  "explanation": "🦊=2, 🍪=5, 🍓=9. From the equations: 2+5=7, 5×9=45 and 9-2=7",
+  "difficulty": "hard"
+}

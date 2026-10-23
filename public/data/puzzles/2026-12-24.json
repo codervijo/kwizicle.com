@@ -1,0 +1,11 @@
+{
+  "date": "2026-12-24",
+  "equations": [
+    { "left": "cake", "operator": "×", "right": "octopus", "result": 16 },
+    { "left": "octopus", "operator": "-", "right": "cake", "result": 6 }
+  ],
+  "target": "octopus",
+  "answer": 8,
+  "explanation": "🍰=2, 🐙=8. From the equations: 2×8=16 and 8-2=6",
+  "difficulty": "medium"
+}

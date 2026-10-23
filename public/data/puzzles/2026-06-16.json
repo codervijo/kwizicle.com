@@ -1,0 +1,11 @@
+{
+  "date": "2026-06-16",
+  "equations": [
+    { "left": "banana", "operator": "+", "right": "strawberry", "result": 9 },
+    { "left": "strawberry", "operator": "-", "right": "banana", "result": 5 }
+  ],
+  "target": "banana",
+  "answer": 2,
+  "explanation": "🍌=2, 🍓=7. From the equations: 2+7=9 and 7-2=5",
+  "difficulty": "easy"
+}

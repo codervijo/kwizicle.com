@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-13",
+  "equations": [
+    { "left": "bee", "operator": "+", "right": "strawberry", "result": 8 },
+    { "left": "strawberry", "operator": "×", "right": "bell", "result": 54 },
+    { "left": "bell", "operator": "-", "right": "bee", "result": 7 }
+  ],
+  "target": "strawberry",
+  "answer": 6,
+  "explanation": "🐝=2, 🍓=6, 🔔=9. From the equations: 2+6=8, 6×9=54 and 9-2=7",
+  "difficulty": "hard"
+}

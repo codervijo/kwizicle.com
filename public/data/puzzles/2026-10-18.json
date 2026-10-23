@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-18",
+  "equations": [
+    { "left": "cookie", "operator": "+", "right": "bike", "result": 13 },
+    { "left": "cookie", "operator": "-", "right": "bike", "result": 1 }
+  ],
+  "target": "bike",
+  "answer": 6,
+  "explanation": "🍪=7, 🚲=6. From the equations: 7+6=13 and 7-6=1",
+  "difficulty": "easy"
+}

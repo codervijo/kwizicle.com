@@ -1,0 +1,11 @@
+{
+  "date": "2026-12-28",
+  "equations": [
+    { "left": "corn", "operator": "+", "right": "avocado", "result": 6 },
+    { "left": "corn", "operator": "-", "right": "avocado", "result": 2 }
+  ],
+  "target": "avocado",
+  "answer": 2,
+  "explanation": "🌽=4, 🥑=2. From the equations: 4+2=6 and 4-2=2",
+  "difficulty": "easy"
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-24",
+  "equations": [
+    { "left": "mushroom", "operator": "+", "right": "monkey", "result": 10 },
+    { "left": "monkey", "operator": "-", "right": "mushroom", "result": 8 }
+  ],
+  "target": "monkey",
+  "answer": 9,
+  "explanation": "🍄=1, 🐵=9. From the equations: 1+9=10 and 9-1=8",
+  "difficulty": "easy"
+}

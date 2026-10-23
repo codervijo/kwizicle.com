@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-06",
+  "equations": [
+    { "left": "cake", "operator": "+", "right": "pineapple", "result": 6 },
+    { "left": "pineapple", "operator": "-", "right": "cake", "result": 2 }
+  ],
+  "target": "cake",
+  "answer": 2,
+  "explanation": "🍰=2, 🍍=4. From the equations: 2+4=6 and 4-2=2",
+  "difficulty": "easy"
+}

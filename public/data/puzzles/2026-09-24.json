@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-24",
+  "equations": [
+    { "left": "cherries", "operator": "×", "right": "pineapple", "result": 10 },
+    { "left": "cherries", "operator": "-", "right": "pineapple", "result": 3 }
+  ],
+  "target": "cherries",
+  "answer": 5,
+  "explanation": "🍒=5, 🍍=2. From the equations: 5×2=10 and 5-2=3",
+  "difficulty": "medium"
+}

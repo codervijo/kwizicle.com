@@ -1,0 +1,11 @@
+{
+  "date": "2026-07-23",
+  "equations": [
+    { "left": "octopus", "operator": "×", "right": "owl", "result": 54 },
+    { "left": "owl", "operator": "-", "right": "octopus", "result": 3 }
+  ],
+  "target": "octopus",
+  "answer": 6,
+  "explanation": "🐙=6, 🦉=9. From the equations: 6×9=54 and 9-6=3",
+  "difficulty": "medium"
+}

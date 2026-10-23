@@ -1,0 +1,11 @@
+{
+  "date": "2026-12-20",
+  "equations": [
+    { "left": "penguin", "operator": "+", "right": "owl", "result": 10 },
+    { "left": "owl", "operator": "-", "right": "penguin", "result": 8 }
+  ],
+  "target": "owl",
+  "answer": 9,
+  "explanation": "🐧=1, 🦉=9. From the equations: 1+9=10 and 9-1=8",
+  "difficulty": "easy"
+}

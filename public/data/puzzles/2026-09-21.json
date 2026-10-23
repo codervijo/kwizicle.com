@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-21",
+  "equations": [
+    { "left": "cookie", "operator": "+", "right": "bee", "result": 4 },
+    { "left": "bee", "operator": "-", "right": "cookie", "result": 2 }
+  ],
+  "target": "bee",
+  "answer": 3,
+  "explanation": "🍪=1, 🐝=3. From the equations: 1+3=4 and 3-1=2",
+  "difficulty": "easy"
+}

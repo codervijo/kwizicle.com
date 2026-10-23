@@ -1,0 +1,11 @@
+{
+  "date": "2026-05-10",
+  "equations": [
+    { "left": "ice_cream", "operator": "+", "right": "monkey", "result": 14 },
+    { "left": "monkey", "operator": "-", "right": "ice_cream", "result": 4 }
+  ],
+  "target": "monkey",
+  "answer": 9,
+  "explanation": "🍦=5, 🐵=9. From the equations: 5+9=14 and 9-5=4",
+  "difficulty": "easy"
+}

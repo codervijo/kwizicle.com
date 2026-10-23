@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-27",
+  "equations": [
+    { "left": "cake", "operator": "+", "right": "frog", "result": 5 },
+    { "left": "frog", "operator": "×", "right": "unicorn", "result": 18 },
+    { "left": "unicorn", "operator": "-", "right": "cake", "result": 6 }
+  ],
+  "target": "unicorn",
+  "answer": 9,
+  "explanation": "🍰=3, 🐸=2, 🦄=9. From the equations: 3+2=5, 2×9=18 and 9-3=6",
+  "difficulty": "hard"
+}

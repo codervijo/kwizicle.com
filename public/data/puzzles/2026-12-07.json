@@ -1,0 +1,11 @@
+{
+  "date": "2026-12-07",
+  "equations": [
+    { "left": "strawberry", "operator": "+", "right": "cake", "result": 6 },
+    { "left": "cake", "operator": "-", "right": "strawberry", "result": 4 }
+  ],
+  "target": "cake",
+  "answer": 5,
+  "explanation": "🍓=1, 🍰=5. From the equations: 1+5=6 and 5-1=4",
+  "difficulty": "easy"
+}

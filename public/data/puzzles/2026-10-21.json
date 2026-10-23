@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-21",
+  "equations": [
+    { "left": "cherries", "operator": "+", "right": "frog", "result": 3 },
+    { "left": "frog", "operator": "+", "right": "car", "result": 5 },
+    { "left": "cherries", "operator": "+", "right": "car", "result": 4 }
+  ],
+  "target": "frog",
+  "answer": 2,
+  "explanation": "🍒=1, 🐸=2, 🚗=3. From the equations: 1+2=3, 2+3=5 and 1+3=4",
+  "difficulty": "medium"
+}
