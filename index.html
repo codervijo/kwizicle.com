@@ -18,6 +18,14 @@
       title/canonical/og tags here — they would duplicate and override the
       per-page ones (every page would canonicalize to the homepage).
     -->
+    <!-- GA4 (LaMill Sites; ID committed per ADR-0029) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BC7R7N2SS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7BC7R7N2SS');
+    </script>
   </head>
 
   <body>
